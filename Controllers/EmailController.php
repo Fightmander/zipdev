@@ -33,9 +33,13 @@ class EmailController
         return $emailModel;
     }
 
-    public function read()
+    public function read($id)
     {
+        $query = "select * from emails where id = ?";
+        $statement = $this->connection->prepare($query);
+        $statement->execute([$id]);
 
+        return $statement;
     }
 
     public function update($id, $phone)

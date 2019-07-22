@@ -33,7 +33,7 @@ class Email
 
         }catch (\PDOException $exception){
             //TODO log query
-            die($exception->getMessage());
+            return $exception->getMessage();
         }
     }
 

@@ -5,7 +5,7 @@ header("Access-Control-Max-Age: 3600");
 header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
 
 include_once $_SERVER["DOCUMENT_ROOT"] . 'Database/Connection.php';
-include_once $_SERVER["DOCUMENT_ROOT"] . 'Controllers/EmailController.php.php';
+include_once $_SERVER["DOCUMENT_ROOT"] . 'Controllers/EmailController.php';
 
 $connection = \Database\Connection::getInstance();
 
@@ -26,7 +26,7 @@ if( (isset($_POST["phoneBookId"]) && $_POST["phoneBookId"] != "") && (isset($_PO
 
 }else{
 
-    echo "phoneBookId and phone values are required";
+    echo "phoneBookId and email values are required";
 
 }
 
