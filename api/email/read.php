@@ -2,14 +2,14 @@
 header("Content-Type: application/json; charset=UTF-8");
 
 include_once $_SERVER["DOCUMENT_ROOT"] . 'Database/Connection.php';
-include_once $_SERVER["DOCUMENT_ROOT"] . 'Controllers/PhoneController.php';
+include_once $_SERVER["DOCUMENT_ROOT"] . 'Controllers/EmailController.php';
 
 $connection = \Database\Connection::getInstance();
 
 if(isset($_GET["id"]) && $_GET["id"]){
 
-    $phoneController = new \Controllers\PhoneController($connection);
-    $statement = $phoneController->read($_GET["id"]);
+    $emailController = new \Controllers\EmailController($connection);
+    $statement = $emailController->read($_GET["id"]);
     $response = $statement->fetch(PDO::FETCH_ASSOC);
 
     if($response){
@@ -18,7 +18,7 @@ if(isset($_GET["id"]) && $_GET["id"]){
 
     }else{
 
-        echo json_encode(["code" => 500, "message" => "id not found"]);
+        echo json_encode(["code" => 404, "message" => "id not found"]);
 
     }
 
