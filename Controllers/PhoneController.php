@@ -67,6 +67,23 @@ class PhoneController
 
     public function delete($id)
     {
+        try{
+            $query = "delete from phones where id = ?";
+            $statement = $this->connection->prepare($query);
+            $statement->execute([$id]);
+            $affected = $statement->rowCount();
+
+            if($affected > 0) {
+                return ["code" => 200, "message" => "deleted successfully"];
+            }else{
+                return ["code" => 404, "message" => "id not found"];
+            }
+
+        }catch (\PDOException $error){
+
+            return ["code" => 500, "message" => $error->getMessage()];
+
+        }
 
     }
 
