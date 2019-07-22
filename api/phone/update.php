@@ -9,7 +9,7 @@ include_once $_SERVER["DOCUMENT_ROOT"] . 'Controllers/PhoneController.php';
 
 $connection = \Database\Connection::getInstance();
 
-if( isset($_POST["id"]) && ( isset($_POST["phone"]) && $_POST["phone"] != "" )){
+if( (isset($_POST["id"]) && $_POST["id"] != "") && ( isset($_POST["phone"]) && $_POST["phone"] != "" )){
 
     $phoneController = new \Controllers\PhoneController($connection);
     $response = $phoneController->update($_POST["id"], $_POST["phone"]);

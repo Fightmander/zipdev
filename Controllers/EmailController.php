@@ -42,8 +42,25 @@ class EmailController
         return $statement;
     }
 
-    public function update($id, $phone)
+    public function update($id, $email)
     {
+        try{
+            $query = "update emails set email = ? where id = ?";
+            $statement = $this->connection->prepare($query);
+            $statement->execute([$email, $id]);
+            $affected = $statement->rowCount();
+
+            if($affected > 0) {
+                return ["code" => 200, "message" => "updated successfully"];
+            }else{
+                return ["code" => 200, "message" => "nothing to update"];
+            }
+
+        }catch (\PDOException $error){
+
+            return ["code" => 500, "message" => $error->getMessage()];
+
+        }
 
     }
 
