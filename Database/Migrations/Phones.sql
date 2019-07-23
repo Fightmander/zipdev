@@ -5,5 +5,4 @@ create table phones (
   PRIMARY KEY (id),
   FOREIGN KEY (phone_books_id) REFERENCES  phone_books (id)
     ON DELETE CASCADE
-) ENGINE=INNODB
-;
+) ENGINE=INNODB;

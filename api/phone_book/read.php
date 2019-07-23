@@ -15,10 +15,12 @@ $data = [];
 $data["data"] = [];
 
 while($row = $statement->fetch(PDO::FETCH_ASSOC)){
+
     $phoneBookArray = [
         "id" => $row["id"],
         "firstName" => $row["first_name"],
         'surName' => $row['sur_name'],
+        'image' => $row['image'],
         'phones' => [],
         'emails' => []
     ];

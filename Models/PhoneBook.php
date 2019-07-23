@@ -14,7 +14,7 @@ use Database\Connection;
 
 class PhoneBook
 {
-    public $id, $firstName, $surName;
+    public $id, $firstName, $surName, $image;
     private $connection;
 
     public function __construct()
@@ -54,15 +54,18 @@ class PhoneBook
     public function save()
     {
         try{
-            $sql = "INSERT INTO phone_books (first_name, sur_name) values (?, ?)";
-            $query = $this->connection->prepare($sql);
-            $query->execute([$this->firstName, $this->surName]);
+            $sql = "INSERT INTO phone_books (first_name, sur_name, image) values (?, ?, ?)";
+            $statement = $this->connection->prepare($sql);
+            $statement->bindParam(1, $this->firstName);
+            $statement->bindParam(2, $this->surName);
+            $statement->bindParam(3, $this->image, \PDO::PARAM_LOB);
+            $statement->execute();
 
             return (int)$this->connection->lastInsertId();
 
         }catch (\PDOException $exception){
             //TODO log query
-            die($exception->getMessage());
+            return $exception->getMessage();
         }
     }
 }

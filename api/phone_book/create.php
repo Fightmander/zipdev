@@ -1,5 +1,6 @@
 <?php
-header("Content-Type: application/json; charset=UTF-8");
+
+header("Content-Type: multipart/form-data; charset=UTF-8");
 header("Access-Control-Allow-Methods: PUT");
 header("Access-Control-Max-Age: 3600");
 header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
@@ -16,8 +17,16 @@ if( (isset($_POST["firstName"]) && $_POST["firstName"] != "") && (isset($_POST["
     try{
         $connection->beginTransaction();
 
+        if(isset($_FILES["image"]) && $_FILES['image']['size'] > 0){
+            $image = file_get_contents($_FILES['image']['tmp_name']);
+        }
+
         $phoneBookController = new \Controllers\PhoneBookController($connection);
-        $phoneBook = $phoneBookController->create($_POST["firstName"], $_POST["surName"]);
+        $phoneBook = $phoneBookController->create($_POST["firstName"], $_POST["surName"], $image ?? null);
+
+        if($phoneBook->image != null){
+            $phoneBook->image = $_FILES['image']["name"];
+        }
 
         $data["phoneBook"] = $phoneBook;
 

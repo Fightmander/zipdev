@@ -1,11 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: fadol
- * Date: 7/17/2019
- * Time: 3:54 PM
- */
-
 namespace Controllers;
 
 use Models\PhoneBook;
@@ -23,11 +16,12 @@ class PhoneBookController
         $this->connection = $connection;
     }
 
-    public function create($firstName, $surName)
+    public function create($firstName, $surName, $image = null)
     {
-        $phoneBook = new \Models\PhoneBook();
+        $phoneBook = new PhoneBook();
         $phoneBook->firstName = $firstName;
         $phoneBook->surName = $surName;
+        $phoneBook->image = $image;
         $phoneBook->save();
         $phoneBook->id = $this->connection->lastInsertId();
 
