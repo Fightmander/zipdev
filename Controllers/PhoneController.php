@@ -8,7 +8,7 @@
 
 namespace Controllers;
 
-include_once $_SERVER['DOCUMENT_ROOT'] . 'Models/Phone.php';
+include_once $_SERVER['DOCUMENT_ROOT'] . '/Models/Phone.php';
 
 use Models\Phone;
 
