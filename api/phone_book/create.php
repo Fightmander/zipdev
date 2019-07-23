@@ -17,12 +17,14 @@ if( (isset($_POST["firstName"]) && $_POST["firstName"] != "") && (isset($_POST["
     try{
         $connection->beginTransaction();
 
+        $folder = $_SERVER["DOCUMENT_ROOT"] . "images/";
+
         if(isset($_FILES["image"]) && $_FILES['image']['size'] > 0){
-            $image = file_get_contents($_FILES['image']['tmp_name']);
+            move_uploaded_file($_FILES["image"]["tmp_name"], $folder . $_FILES["image"]["name"]);
         }
 
         $phoneBookController = new \Controllers\PhoneBookController($connection);
-        $phoneBook = $phoneBookController->create($_POST["firstName"], $_POST["surName"], $image ?? null);
+        $phoneBook = $phoneBookController->create($_POST["firstName"], $_POST["surName"], $_FILES["image"]["name"] ?? null);
 
         if($phoneBook->image != null){
             $phoneBook->image = $_FILES['image']["name"];
@@ -59,7 +61,8 @@ if( (isset($_POST["firstName"]) && $_POST["firstName"] != "") && (isset($_POST["
 
         $connection->commit();
 
-        echo json_encode($data);
+        echo json_encode($data, JSON_PRETTY_PRINT);
+
     }catch (Exception $exception){
         echo $exception->getMessage();
         $connection->rollBack();
