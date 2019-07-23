@@ -8,8 +8,7 @@
 
 namespace Controllers;
 
-include_once $_SERVER["DOCUMENT_ROOT"] . "Database/Connection.php";
-include_once $_SERVER["DOCUMENT_ROOT"] . "Models/Email.php";
+include_once $_SERVER["DOCUMENT_ROOT"] . "/Models/Email.php";
 
 use Models\Email;
 

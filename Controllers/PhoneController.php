@@ -8,7 +8,6 @@
 
 namespace Controllers;
 
-include_once $_SERVER['DOCUMENT_ROOT'] . 'Interface/CrudInterface.php';
 include_once $_SERVER['DOCUMENT_ROOT'] . 'Models/Phone.php';
 
 use Models\Phone;

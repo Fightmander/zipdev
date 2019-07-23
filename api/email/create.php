@@ -4,8 +4,8 @@ header("Access-Control-Allow-Methods: PUT");
 header("Access-Control-Max-Age: 3600");
 header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
 
-include_once $_SERVER["DOCUMENT_ROOT"] . 'Database/Connection.php';
-include_once $_SERVER["DOCUMENT_ROOT"] . 'Controllers/EmailController.php';
+include_once $_SERVER["DOCUMENT_ROOT"] . '/Database/Connection.php';
+include_once $_SERVER["DOCUMENT_ROOT"] . '/Controllers/EmailController.php';
 
 $connection = \Database\Connection::getInstance();
 

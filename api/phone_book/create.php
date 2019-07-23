@@ -5,10 +5,10 @@ header("Access-Control-Allow-Methods: PUT");
 header("Access-Control-Max-Age: 3600");
 header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
 
-include_once $_SERVER["DOCUMENT_ROOT"] . 'Database/Connection.php';
-include_once $_SERVER["DOCUMENT_ROOT"] . 'Controllers/PhoneBookController.php';
-include_once $_SERVER["DOCUMENT_ROOT"] . 'Controllers/PhoneController.php';
-include_once $_SERVER["DOCUMENT_ROOT"] . 'Controllers/EmailController.php';
+include_once $_SERVER["DOCUMENT_ROOT"] . '/Database/Connection.php';
+include_once $_SERVER["DOCUMENT_ROOT"] . '/Controllers/PhoneBookController.php';
+include_once $_SERVER["DOCUMENT_ROOT"] . '/Controllers/PhoneController.php';
+include_once $_SERVER["DOCUMENT_ROOT"] . '/Controllers/EmailController.php';
 
 $connection = \Database\Connection::getInstance();
 $data = ["phoneBook" => [], "phones" => [], "emails" => []];
@@ -17,7 +17,7 @@ if( (isset($_POST["firstName"]) && $_POST["firstName"] != "") && (isset($_POST["
     try{
         $connection->beginTransaction();
 
-        $folder = $_SERVER["DOCUMENT_ROOT"] . "images/";
+        $folder = $_SERVER["DOCUMENT_ROOT"] . "/images/";
 
         if(isset($_FILES["image"]) && $_FILES['image']['size'] > 0){
             move_uploaded_file($_FILES["image"]["tmp_name"], $folder . $_FILES["image"]["name"]);

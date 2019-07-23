@@ -3,9 +3,7 @@ namespace Controllers;
 
 use Models\PhoneBook;
 
-include_once $_SERVER['DOCUMENT_ROOT'] . 'Interface/CrudInterface.php';
-include_once $_SERVER['DOCUMENT_ROOT'] . 'Models/PhoneBook.php';
-
+include_once $_SERVER['DOCUMENT_ROOT'] . '/Models/PhoneBook.php';
 
 class PhoneBookController
 {

@@ -1,8 +1,8 @@
 <?php
 header("Content-Type: application/json; charset=UTF-8");
 
-include_once $_SERVER["DOCUMENT_ROOT"] . 'Database/Connection.php';
-include_once $_SERVER["DOCUMENT_ROOT"] . 'Controllers/PhoneController.php';
+include_once $_SERVER["DOCUMENT_ROOT"] . '/Database/Connection.php';
+include_once $_SERVER["DOCUMENT_ROOT"] . '/Controllers/PhoneController.php';
 
 $connection = \Database\Connection::getInstance();
 
