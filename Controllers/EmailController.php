@@ -52,7 +52,7 @@ class EmailController
             if($affected > 0) {
                 return ["code" => 200, "message" => "updated successfully"];
             }else{
-                return ["code" => 200, "message" => "nothing to update"];
+                return ["code" => 204, "message" => "nothing to update"];
             }
 
         }catch (\PDOException $error){
