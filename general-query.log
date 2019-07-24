@@ -1,0 +1,2033 @@
+wampmysqld64, Version: 5.7.21-log (MySQL Community Server (GPL)). started with:
+TCP Port: 3306, Named Pipe: /tmp/mysql.sock
+Time                 Id Command    Argument
+2019-07-23T03:47:32.859075Z	    2 Connect	root@localhost on  using TCP/IP
+2019-07-23T03:47:32.861499Z	    2 Query	show databases
+2019-07-23T03:47:42.747876Z	    3 Connect	root@localhost on zipdev using TCP/IP
+2019-07-23T03:47:42.760706Z	    3 Prepare	select * from phones where id = ?
+2019-07-23T03:47:42.760858Z	    3 Execute	select * from phones where id = '6'
+2019-07-23T03:47:42.761687Z	    3 Close stmt	
+2019-07-23T03:47:42.762687Z	    3 Quit	
+2019-07-23T03:48:01.440159Z	    2 Quit	
+2019-07-23T03:48:10.341337Z	    4 Connect	root@localhost on zipdev using TCP/IP
+2019-07-23T03:48:10.343421Z	    4 Prepare	select * from phone_books
+2019-07-23T03:48:10.343495Z	    4 Execute	select * from phone_books
+2019-07-23T03:48:10.349542Z	    4 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:48:10.349616Z	    4 Execute	select * from phones where phone_books_id = '1'
+2019-07-23T03:48:10.351645Z	    4 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:48:10.351728Z	    4 Execute	select * from emails where phone_books_id = '1'
+2019-07-23T03:48:10.352123Z	    4 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:48:10.352177Z	    4 Execute	select * from phones where phone_books_id = '3'
+2019-07-23T03:48:10.352365Z	    4 Close stmt	
+2019-07-23T03:48:10.352457Z	    4 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:48:10.352540Z	    4 Execute	select * from emails where phone_books_id = '3'
+2019-07-23T03:48:10.352739Z	    4 Close stmt	
+2019-07-23T03:48:10.352959Z	    4 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:48:10.352988Z	    4 Execute	select * from phones where phone_books_id = '4'
+2019-07-23T03:48:10.353188Z	    4 Close stmt	
+2019-07-23T03:48:10.353383Z	    4 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:48:10.353442Z	    4 Execute	select * from emails where phone_books_id = '4'
+2019-07-23T03:48:10.353681Z	    4 Close stmt	
+2019-07-23T03:48:10.353903Z	    4 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:48:10.353955Z	    4 Execute	select * from phones where phone_books_id = '5'
+2019-07-23T03:48:10.354169Z	    4 Close stmt	
+2019-07-23T03:48:10.354331Z	    4 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:48:10.354385Z	    4 Execute	select * from emails where phone_books_id = '5'
+2019-07-23T03:48:10.354568Z	    4 Close stmt	
+2019-07-23T03:48:10.354773Z	    4 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:48:10.354814Z	    4 Execute	select * from phones where phone_books_id = '6'
+2019-07-23T03:48:10.354973Z	    4 Close stmt	
+2019-07-23T03:48:10.355055Z	    4 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:48:10.355082Z	    4 Execute	select * from emails where phone_books_id = '6'
+2019-07-23T03:48:10.355265Z	    4 Close stmt	
+2019-07-23T03:48:10.355439Z	    4 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:48:10.355481Z	    4 Execute	select * from phones where phone_books_id = '7'
+2019-07-23T03:48:10.355651Z	    4 Close stmt	
+2019-07-23T03:48:10.355754Z	    4 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:48:10.355814Z	    4 Execute	select * from emails where phone_books_id = '7'
+2019-07-23T03:48:10.355980Z	    4 Close stmt	
+2019-07-23T03:48:10.356120Z	    4 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:48:10.356150Z	    4 Execute	select * from phones where phone_books_id = '11'
+2019-07-23T03:48:10.356322Z	    4 Close stmt	
+2019-07-23T03:48:10.356447Z	    4 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:48:10.356483Z	    4 Execute	select * from emails where phone_books_id = '11'
+2019-07-23T03:48:10.356634Z	    4 Close stmt	
+2019-07-23T03:48:10.356794Z	    4 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:48:10.356824Z	    4 Execute	select * from phones where phone_books_id = '12'
+2019-07-23T03:48:10.357029Z	    4 Close stmt	
+2019-07-23T03:48:10.357114Z	    4 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:48:10.357138Z	    4 Execute	select * from emails where phone_books_id = '12'
+2019-07-23T03:48:10.357315Z	    4 Close stmt	
+2019-07-23T03:48:10.357476Z	    4 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:48:10.357530Z	    4 Execute	select * from phones where phone_books_id = '13'
+2019-07-23T03:48:10.357695Z	    4 Close stmt	
+2019-07-23T03:48:10.357792Z	    4 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:48:10.357821Z	    4 Execute	select * from emails where phone_books_id = '13'
+2019-07-23T03:48:10.357959Z	    4 Close stmt	
+2019-07-23T03:48:10.358079Z	    4 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:48:10.358108Z	    4 Execute	select * from phones where phone_books_id = '14'
+2019-07-23T03:48:10.358259Z	    4 Close stmt	
+2019-07-23T03:48:10.358359Z	    4 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:48:10.358430Z	    4 Execute	select * from emails where phone_books_id = '14'
+2019-07-23T03:48:10.358596Z	    4 Close stmt	
+2019-07-23T03:48:10.358691Z	    4 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:48:10.358721Z	    4 Execute	select * from phones where phone_books_id = '15'
+2019-07-23T03:48:10.358853Z	    4 Close stmt	
+2019-07-23T03:48:10.358943Z	    4 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:48:10.358971Z	    4 Execute	select * from emails where phone_books_id = '15'
+2019-07-23T03:48:10.359103Z	    4 Close stmt	
+2019-07-23T03:48:10.359250Z	    4 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:48:10.359314Z	    4 Execute	select * from phones where phone_books_id = '16'
+2019-07-23T03:48:10.359492Z	    4 Close stmt	
+2019-07-23T03:48:10.359588Z	    4 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:48:10.359618Z	    4 Execute	select * from emails where phone_books_id = '16'
+2019-07-23T03:48:10.359757Z	    4 Close stmt	
+2019-07-23T03:48:10.359893Z	    4 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:48:10.359922Z	    4 Execute	select * from phones where phone_books_id = '17'
+2019-07-23T03:48:10.360056Z	    4 Close stmt	
+2019-07-23T03:48:10.360132Z	    4 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:48:10.360160Z	    4 Execute	select * from emails where phone_books_id = '17'
+2019-07-23T03:48:10.360301Z	    4 Close stmt	
+2019-07-23T03:48:10.360431Z	    4 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:48:10.360474Z	    4 Execute	select * from phones where phone_books_id = '18'
+2019-07-23T03:48:10.360612Z	    4 Close stmt	
+2019-07-23T03:48:10.360688Z	    4 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:48:10.360716Z	    4 Execute	select * from emails where phone_books_id = '18'
+2019-07-23T03:48:10.360854Z	    4 Close stmt	
+2019-07-23T03:48:10.361240Z	    4 Close stmt	
+2019-07-23T03:48:10.361287Z	    4 Close stmt	
+2019-07-23T03:48:10.361308Z	    4 Close stmt	
+2019-07-23T03:48:10.361337Z	    4 Quit	
+2019-07-23T03:56:50.956828Z	    5 Connect	root@localhost on zipdev using TCP/IP
+2019-07-23T03:56:50.958921Z	    5 Prepare	select * from phone_books
+2019-07-23T03:56:50.959014Z	    5 Execute	select * from phone_books
+2019-07-23T03:56:50.965603Z	    5 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:56:50.965661Z	    5 Execute	select * from phones where phone_books_id = '1'
+2019-07-23T03:56:50.967448Z	    5 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:56:50.967534Z	    5 Execute	select * from emails where phone_books_id = '1'
+2019-07-23T03:56:50.968021Z	    5 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:56:50.968066Z	    5 Execute	select * from phones where phone_books_id = '3'
+2019-07-23T03:56:50.968256Z	    5 Close stmt	
+2019-07-23T03:56:50.968494Z	    5 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:56:50.968559Z	    5 Execute	select * from emails where phone_books_id = '3'
+2019-07-23T03:56:50.968814Z	    5 Close stmt	
+2019-07-23T03:56:50.969000Z	    5 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:56:50.969054Z	    5 Execute	select * from phones where phone_books_id = '4'
+2019-07-23T03:56:50.969222Z	    5 Close stmt	
+2019-07-23T03:56:50.969479Z	    5 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:56:50.969556Z	    5 Execute	select * from emails where phone_books_id = '4'
+2019-07-23T03:56:50.969831Z	    5 Close stmt	
+2019-07-23T03:56:50.970049Z	    5 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:56:50.970180Z	    5 Execute	select * from phones where phone_books_id = '5'
+2019-07-23T03:56:50.970505Z	    5 Close stmt	
+2019-07-23T03:56:50.970758Z	    5 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:56:50.970822Z	    5 Execute	select * from emails where phone_books_id = '5'
+2019-07-23T03:56:50.971074Z	    5 Close stmt	
+2019-07-23T03:56:50.971264Z	    5 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:56:50.971300Z	    5 Execute	select * from phones where phone_books_id = '6'
+2019-07-23T03:56:50.971571Z	    5 Close stmt	
+2019-07-23T03:56:50.971799Z	    5 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:56:50.971883Z	    5 Execute	select * from emails where phone_books_id = '6'
+2019-07-23T03:56:50.972097Z	    5 Close stmt	
+2019-07-23T03:56:50.972235Z	    5 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:56:50.972291Z	    5 Execute	select * from phones where phone_books_id = '7'
+2019-07-23T03:56:50.972536Z	    5 Close stmt	
+2019-07-23T03:56:50.972681Z	    5 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:56:50.972716Z	    5 Execute	select * from emails where phone_books_id = '7'
+2019-07-23T03:56:50.972918Z	    5 Close stmt	
+2019-07-23T03:56:50.973070Z	    5 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:56:50.973104Z	    5 Execute	select * from phones where phone_books_id = '11'
+2019-07-23T03:56:50.973278Z	    5 Close stmt	
+2019-07-23T03:56:50.973423Z	    5 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:56:50.973473Z	    5 Execute	select * from emails where phone_books_id = '11'
+2019-07-23T03:56:50.973699Z	    5 Close stmt	
+2019-07-23T03:56:50.973979Z	    5 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:56:50.974030Z	    5 Execute	select * from phones where phone_books_id = '12'
+2019-07-23T03:56:50.974266Z	    5 Close stmt	
+2019-07-23T03:56:50.974414Z	    5 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:56:50.974491Z	    5 Execute	select * from emails where phone_books_id = '12'
+2019-07-23T03:56:50.974724Z	    5 Close stmt	
+2019-07-23T03:56:50.974909Z	    5 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:56:50.974961Z	    5 Execute	select * from phones where phone_books_id = '13'
+2019-07-23T03:56:50.975164Z	    5 Close stmt	
+2019-07-23T03:56:50.975289Z	    5 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:56:50.975345Z	    5 Execute	select * from emails where phone_books_id = '13'
+2019-07-23T03:56:50.975555Z	    5 Close stmt	
+2019-07-23T03:56:50.975733Z	    5 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:56:50.975773Z	    5 Execute	select * from phones where phone_books_id = '14'
+2019-07-23T03:56:50.975987Z	    5 Close stmt	
+2019-07-23T03:56:50.976138Z	    5 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:56:50.976172Z	    5 Execute	select * from emails where phone_books_id = '14'
+2019-07-23T03:56:50.976380Z	    5 Close stmt	
+2019-07-23T03:56:50.976573Z	    5 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:56:50.976652Z	    5 Execute	select * from phones where phone_books_id = '15'
+2019-07-23T03:56:50.976837Z	    5 Close stmt	
+2019-07-23T03:56:50.976965Z	    5 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:56:50.977006Z	    5 Execute	select * from emails where phone_books_id = '15'
+2019-07-23T03:56:50.977162Z	    5 Close stmt	
+2019-07-23T03:56:50.977334Z	    5 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:56:50.977396Z	    5 Execute	select * from phones where phone_books_id = '16'
+2019-07-23T03:56:50.977632Z	    5 Close stmt	
+2019-07-23T03:56:50.977771Z	    5 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:56:50.977805Z	    5 Execute	select * from emails where phone_books_id = '16'
+2019-07-23T03:56:50.978021Z	    5 Close stmt	
+2019-07-23T03:56:50.978197Z	    5 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:56:50.978272Z	    5 Execute	select * from phones where phone_books_id = '17'
+2019-07-23T03:56:50.978540Z	    5 Close stmt	
+2019-07-23T03:56:50.978665Z	    5 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:56:50.978722Z	    5 Execute	select * from emails where phone_books_id = '17'
+2019-07-23T03:56:50.978911Z	    5 Close stmt	
+2019-07-23T03:56:50.979058Z	    5 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:56:50.979145Z	    5 Execute	select * from phones where phone_books_id = '18'
+2019-07-23T03:56:50.979328Z	    5 Close stmt	
+2019-07-23T03:56:50.979475Z	    5 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:56:50.979534Z	    5 Execute	select * from emails where phone_books_id = '18'
+2019-07-23T03:56:50.979711Z	    5 Close stmt	
+2019-07-23T03:56:50.980054Z	    5 Close stmt	
+2019-07-23T03:56:50.980083Z	    5 Close stmt	
+2019-07-23T03:56:50.980105Z	    5 Close stmt	
+2019-07-23T03:56:50.980159Z	    5 Quit	
+2019-07-23T03:57:12.976348Z	    6 Connect	root@localhost on zipdev using TCP/IP
+2019-07-23T03:57:12.978395Z	    6 Prepare	select * from phone_books
+2019-07-23T03:57:12.978491Z	    6 Execute	select * from phone_books
+2019-07-23T03:57:12.984133Z	    6 Close stmt	
+2019-07-23T03:57:12.984185Z	    6 Quit	
+2019-07-23T03:57:52.004678Z	    7 Connect	root@localhost on zipdev using TCP/IP
+2019-07-23T03:57:52.006945Z	    7 Prepare	select * from phone_books
+2019-07-23T03:57:52.007032Z	    7 Execute	select * from phone_books
+2019-07-23T03:57:52.013324Z	    7 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:57:52.013430Z	    7 Execute	select * from phones where phone_books_id = '1'
+2019-07-23T03:57:52.015886Z	    7 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:57:52.015953Z	    7 Execute	select * from emails where phone_books_id = '1'
+2019-07-23T03:57:52.016237Z	    7 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:57:52.016282Z	    7 Execute	select * from phones where phone_books_id = '3'
+2019-07-23T03:57:52.016432Z	    7 Close stmt	
+2019-07-23T03:57:52.016574Z	    7 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:57:52.016626Z	    7 Execute	select * from emails where phone_books_id = '3'
+2019-07-23T03:57:52.016770Z	    7 Close stmt	
+2019-07-23T03:57:52.016884Z	    7 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:57:52.016916Z	    7 Execute	select * from phones where phone_books_id = '4'
+2019-07-23T03:57:52.017049Z	    7 Close stmt	
+2019-07-23T03:57:52.017125Z	    7 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:57:52.017153Z	    7 Execute	select * from emails where phone_books_id = '4'
+2019-07-23T03:57:52.017288Z	    7 Close stmt	
+2019-07-23T03:57:52.017399Z	    7 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:57:52.017428Z	    7 Execute	select * from phones where phone_books_id = '5'
+2019-07-23T03:57:52.017664Z	    7 Close stmt	
+2019-07-23T03:57:52.017795Z	    7 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:57:52.017828Z	    7 Execute	select * from emails where phone_books_id = '5'
+2019-07-23T03:57:52.018001Z	    7 Close stmt	
+2019-07-23T03:57:52.018122Z	    7 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:57:52.018153Z	    7 Execute	select * from phones where phone_books_id = '6'
+2019-07-23T03:57:52.018292Z	    7 Close stmt	
+2019-07-23T03:57:52.018371Z	    7 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:57:52.018399Z	    7 Execute	select * from emails where phone_books_id = '6'
+2019-07-23T03:57:52.018658Z	    7 Close stmt	
+2019-07-23T03:57:52.018773Z	    7 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:57:52.018822Z	    7 Execute	select * from phones where phone_books_id = '7'
+2019-07-23T03:57:52.018992Z	    7 Close stmt	
+2019-07-23T03:57:52.019093Z	    7 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:57:52.019171Z	    7 Execute	select * from emails where phone_books_id = '7'
+2019-07-23T03:57:52.019417Z	    7 Close stmt	
+2019-07-23T03:57:52.019611Z	    7 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:57:52.019646Z	    7 Execute	select * from phones where phone_books_id = '11'
+2019-07-23T03:57:52.019832Z	    7 Close stmt	
+2019-07-23T03:57:52.019943Z	    7 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:57:52.020015Z	    7 Execute	select * from emails where phone_books_id = '11'
+2019-07-23T03:57:52.020181Z	    7 Close stmt	
+2019-07-23T03:57:52.020460Z	    7 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:57:52.020518Z	    7 Execute	select * from phones where phone_books_id = '12'
+2019-07-23T03:57:52.020725Z	    7 Close stmt	
+2019-07-23T03:57:52.020865Z	    7 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:57:52.020935Z	    7 Execute	select * from emails where phone_books_id = '12'
+2019-07-23T03:57:52.021155Z	    7 Close stmt	
+2019-07-23T03:57:52.021333Z	    7 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:57:52.021366Z	    7 Execute	select * from phones where phone_books_id = '13'
+2019-07-23T03:57:52.021612Z	    7 Close stmt	
+2019-07-23T03:57:52.021763Z	    7 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:57:52.021829Z	    7 Execute	select * from emails where phone_books_id = '13'
+2019-07-23T03:57:52.022053Z	    7 Close stmt	
+2019-07-23T03:57:52.022227Z	    7 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:57:52.022255Z	    7 Execute	select * from phones where phone_books_id = '14'
+2019-07-23T03:57:52.022461Z	    7 Close stmt	
+2019-07-23T03:57:52.022582Z	    7 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:57:52.022627Z	    7 Execute	select * from emails where phone_books_id = '14'
+2019-07-23T03:57:52.022781Z	    7 Close stmt	
+2019-07-23T03:57:52.022895Z	    7 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:57:52.022970Z	    7 Execute	select * from phones where phone_books_id = '15'
+2019-07-23T03:57:52.023158Z	    7 Close stmt	
+2019-07-23T03:57:52.023251Z	    7 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:57:52.023341Z	    7 Execute	select * from emails where phone_books_id = '15'
+2019-07-23T03:57:52.023585Z	    7 Close stmt	
+2019-07-23T03:57:52.023731Z	    7 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:57:52.023762Z	    7 Execute	select * from phones where phone_books_id = '16'
+2019-07-23T03:57:52.023927Z	    7 Close stmt	
+2019-07-23T03:57:52.024021Z	    7 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:57:52.024050Z	    7 Execute	select * from emails where phone_books_id = '16'
+2019-07-23T03:57:52.024191Z	    7 Close stmt	
+2019-07-23T03:57:52.024333Z	    7 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:57:52.024361Z	    7 Execute	select * from phones where phone_books_id = '17'
+2019-07-23T03:57:52.024503Z	    7 Close stmt	
+2019-07-23T03:57:52.024618Z	    7 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:57:52.024695Z	    7 Execute	select * from emails where phone_books_id = '17'
+2019-07-23T03:57:52.024912Z	    7 Close stmt	
+2019-07-23T03:57:52.025037Z	    7 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:57:52.025063Z	    7 Execute	select * from phones where phone_books_id = '18'
+2019-07-23T03:57:52.025204Z	    7 Close stmt	
+2019-07-23T03:57:52.025298Z	    7 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:57:52.025327Z	    7 Execute	select * from emails where phone_books_id = '18'
+2019-07-23T03:57:52.025471Z	    7 Close stmt	
+2019-07-23T03:57:52.025675Z	    7 Close stmt	
+2019-07-23T03:57:52.025698Z	    7 Close stmt	
+2019-07-23T03:57:52.025719Z	    7 Close stmt	
+2019-07-23T03:57:52.025771Z	    7 Quit	
+2019-07-23T03:58:36.511481Z	    8 Connect	root@localhost on zipdev using TCP/IP
+2019-07-23T03:58:36.513577Z	    8 Prepare	select * from phone_books
+2019-07-23T03:58:36.513668Z	    8 Execute	select * from phone_books
+2019-07-23T03:58:36.518096Z	    8 Close stmt	
+2019-07-23T03:58:36.518149Z	    8 Quit	
+2019-07-23T03:58:46.270545Z	    9 Connect	root@localhost on zipdev using TCP/IP
+2019-07-23T03:58:46.272369Z	    9 Prepare	select * from phone_books
+2019-07-23T03:58:46.272421Z	    9 Execute	select * from phone_books
+2019-07-23T03:58:46.277843Z	    9 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:58:46.277933Z	    9 Execute	select * from phones where phone_books_id = '1'
+2019-07-23T03:58:46.279536Z	    9 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:58:46.279590Z	    9 Execute	select * from emails where phone_books_id = '1'
+2019-07-23T03:58:46.279875Z	    9 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:58:46.279907Z	    9 Execute	select * from phones where phone_books_id = '3'
+2019-07-23T03:58:46.280069Z	    9 Close stmt	
+2019-07-23T03:58:46.280178Z	    9 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:58:46.280229Z	    9 Execute	select * from emails where phone_books_id = '3'
+2019-07-23T03:58:46.280432Z	    9 Close stmt	
+2019-07-23T03:58:46.280659Z	    9 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:58:46.280707Z	    9 Execute	select * from phones where phone_books_id = '4'
+2019-07-23T03:58:46.280903Z	    9 Close stmt	
+2019-07-23T03:58:46.280996Z	    9 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:58:46.281027Z	    9 Execute	select * from emails where phone_books_id = '4'
+2019-07-23T03:58:46.281172Z	    9 Close stmt	
+2019-07-23T03:58:46.281449Z	    9 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:58:46.281543Z	    9 Execute	select * from phones where phone_books_id = '5'
+2019-07-23T03:58:46.281737Z	    9 Close stmt	
+2019-07-23T03:58:46.281858Z	    9 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:58:46.281890Z	    9 Execute	select * from emails where phone_books_id = '5'
+2019-07-23T03:58:46.282054Z	    9 Close stmt	
+2019-07-23T03:58:46.282226Z	    9 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:58:46.282260Z	    9 Execute	select * from phones where phone_books_id = '6'
+2019-07-23T03:58:46.282426Z	    9 Close stmt	
+2019-07-23T03:58:46.282575Z	    9 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:58:46.282621Z	    9 Execute	select * from emails where phone_books_id = '6'
+2019-07-23T03:58:46.282823Z	    9 Close stmt	
+2019-07-23T03:58:46.283003Z	    9 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:58:46.283048Z	    9 Execute	select * from phones where phone_books_id = '7'
+2019-07-23T03:58:46.283291Z	    9 Close stmt	
+2019-07-23T03:58:46.283442Z	    9 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:58:46.283533Z	    9 Execute	select * from emails where phone_books_id = '7'
+2019-07-23T03:58:46.283783Z	    9 Close stmt	
+2019-07-23T03:58:46.283986Z	    9 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:58:46.284021Z	    9 Execute	select * from phones where phone_books_id = '11'
+2019-07-23T03:58:46.284195Z	    9 Close stmt	
+2019-07-23T03:58:46.284307Z	    9 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:58:46.284339Z	    9 Execute	select * from emails where phone_books_id = '11'
+2019-07-23T03:58:46.284570Z	    9 Close stmt	
+2019-07-23T03:58:46.284825Z	    9 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:58:46.284861Z	    9 Execute	select * from phones where phone_books_id = '12'
+2019-07-23T03:58:46.285167Z	    9 Close stmt	
+2019-07-23T03:58:46.285290Z	    9 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:58:46.285332Z	    9 Execute	select * from emails where phone_books_id = '12'
+2019-07-23T03:58:46.285606Z	    9 Close stmt	
+2019-07-23T03:58:46.285818Z	    9 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:58:46.285853Z	    9 Execute	select * from phones where phone_books_id = '13'
+2019-07-23T03:58:46.286039Z	    9 Close stmt	
+2019-07-23T03:58:46.286187Z	    9 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:58:46.286223Z	    9 Execute	select * from emails where phone_books_id = '13'
+2019-07-23T03:58:46.286452Z	    9 Close stmt	
+2019-07-23T03:58:46.286751Z	    9 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:58:46.286845Z	    9 Execute	select * from phones where phone_books_id = '14'
+2019-07-23T03:58:46.287154Z	    9 Close stmt	
+2019-07-23T03:58:46.287289Z	    9 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:58:46.287326Z	    9 Execute	select * from emails where phone_books_id = '14'
+2019-07-23T03:58:46.287553Z	    9 Close stmt	
+2019-07-23T03:58:46.287716Z	    9 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:58:46.287767Z	    9 Execute	select * from phones where phone_books_id = '15'
+2019-07-23T03:58:46.287940Z	    9 Close stmt	
+2019-07-23T03:58:46.288057Z	    9 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:58:46.288140Z	    9 Execute	select * from emails where phone_books_id = '15'
+2019-07-23T03:58:46.288349Z	    9 Close stmt	
+2019-07-23T03:58:46.288724Z	    9 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:58:46.288770Z	    9 Execute	select * from phones where phone_books_id = '16'
+2019-07-23T03:58:46.288976Z	    9 Close stmt	
+2019-07-23T03:58:46.289098Z	    9 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:58:46.289137Z	    9 Execute	select * from emails where phone_books_id = '16'
+2019-07-23T03:58:46.289295Z	    9 Close stmt	
+2019-07-23T03:58:46.289497Z	    9 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:58:46.289603Z	    9 Execute	select * from phones where phone_books_id = '17'
+2019-07-23T03:58:46.289831Z	    9 Close stmt	
+2019-07-23T03:58:46.289959Z	    9 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:58:46.290043Z	    9 Execute	select * from emails where phone_books_id = '17'
+2019-07-23T03:58:46.290265Z	    9 Close stmt	
+2019-07-23T03:58:46.290530Z	    9 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:58:46.290587Z	    9 Execute	select * from phones where phone_books_id = '18'
+2019-07-23T03:58:46.290798Z	    9 Close stmt	
+2019-07-23T03:58:46.290930Z	    9 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:58:46.290964Z	    9 Execute	select * from emails where phone_books_id = '18'
+2019-07-23T03:58:46.291123Z	    9 Close stmt	
+2019-07-23T03:58:46.291303Z	    9 Close stmt	
+2019-07-23T03:58:46.291335Z	    9 Close stmt	
+2019-07-23T03:58:46.291364Z	    9 Close stmt	
+2019-07-23T03:58:46.291440Z	    9 Quit	
+2019-07-23T03:59:11.888989Z	   10 Connect	root@localhost on zipdev using TCP/IP
+2019-07-23T03:59:11.890882Z	   10 Prepare	select * from phone_books
+2019-07-23T03:59:11.890970Z	   10 Execute	select * from phone_books
+2019-07-23T03:59:11.897456Z	   10 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:59:11.897559Z	   10 Execute	select * from phones where phone_books_id = '1'
+2019-07-23T03:59:11.899150Z	   10 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:59:11.899210Z	   10 Execute	select * from emails where phone_books_id = '1'
+2019-07-23T03:59:11.899540Z	   10 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:59:11.899591Z	   10 Execute	select * from phones where phone_books_id = '3'
+2019-07-23T03:59:11.899787Z	   10 Close stmt	
+2019-07-23T03:59:11.899900Z	   10 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:59:11.899961Z	   10 Execute	select * from emails where phone_books_id = '3'
+2019-07-23T03:59:11.900183Z	   10 Close stmt	
+2019-07-23T03:59:11.900763Z	   10 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:59:11.900821Z	   10 Execute	select * from phones where phone_books_id = '4'
+2019-07-23T03:59:11.901027Z	   10 Close stmt	
+2019-07-23T03:59:11.901157Z	   10 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:59:11.901213Z	   10 Execute	select * from emails where phone_books_id = '4'
+2019-07-23T03:59:11.901408Z	   10 Close stmt	
+2019-07-23T03:59:11.901953Z	   10 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:59:11.901986Z	   10 Execute	select * from phones where phone_books_id = '5'
+2019-07-23T03:59:11.902135Z	   10 Close stmt	
+2019-07-23T03:59:11.902231Z	   10 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:59:11.902298Z	   10 Execute	select * from emails where phone_books_id = '5'
+2019-07-23T03:59:11.902497Z	   10 Close stmt	
+2019-07-23T03:59:11.903377Z	   10 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:59:11.903419Z	   10 Execute	select * from phones where phone_books_id = '6'
+2019-07-23T03:59:11.903648Z	   10 Close stmt	
+2019-07-23T03:59:11.903753Z	   10 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:59:11.903785Z	   10 Execute	select * from emails where phone_books_id = '6'
+2019-07-23T03:59:11.903949Z	   10 Close stmt	
+2019-07-23T03:59:11.904068Z	   10 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:59:11.904097Z	   10 Execute	select * from phones where phone_books_id = '7'
+2019-07-23T03:59:11.904236Z	   10 Close stmt	
+2019-07-23T03:59:11.904313Z	   10 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:59:11.904355Z	   10 Execute	select * from emails where phone_books_id = '7'
+2019-07-23T03:59:11.904507Z	   10 Close stmt	
+2019-07-23T03:59:11.905039Z	   10 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:59:11.905070Z	   10 Execute	select * from phones where phone_books_id = '11'
+2019-07-23T03:59:11.905217Z	   10 Close stmt	
+2019-07-23T03:59:11.905288Z	   10 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:59:11.905318Z	   10 Execute	select * from emails where phone_books_id = '11'
+2019-07-23T03:59:11.905455Z	   10 Close stmt	
+2019-07-23T03:59:11.906003Z	   10 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:59:11.906032Z	   10 Execute	select * from phones where phone_books_id = '12'
+2019-07-23T03:59:11.906172Z	   10 Close stmt	
+2019-07-23T03:59:11.906249Z	   10 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:59:11.906276Z	   10 Execute	select * from emails where phone_books_id = '12'
+2019-07-23T03:59:11.906410Z	   10 Close stmt	
+2019-07-23T03:59:11.906926Z	   10 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:59:11.906957Z	   10 Execute	select * from phones where phone_books_id = '13'
+2019-07-23T03:59:11.907093Z	   10 Close stmt	
+2019-07-23T03:59:11.907170Z	   10 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:59:11.907197Z	   10 Execute	select * from emails where phone_books_id = '13'
+2019-07-23T03:59:11.907335Z	   10 Close stmt	
+2019-07-23T03:59:11.907845Z	   10 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:59:11.907889Z	   10 Execute	select * from phones where phone_books_id = '14'
+2019-07-23T03:59:11.908056Z	   10 Close stmt	
+2019-07-23T03:59:11.908133Z	   10 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:59:11.908160Z	   10 Execute	select * from emails where phone_books_id = '14'
+2019-07-23T03:59:11.908306Z	   10 Close stmt	
+2019-07-23T03:59:11.908410Z	   10 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:59:11.908448Z	   10 Execute	select * from phones where phone_books_id = '15'
+2019-07-23T03:59:11.908585Z	   10 Close stmt	
+2019-07-23T03:59:11.908662Z	   10 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:59:11.908690Z	   10 Execute	select * from emails where phone_books_id = '15'
+2019-07-23T03:59:11.908824Z	   10 Close stmt	
+2019-07-23T03:59:11.909343Z	   10 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:59:11.909453Z	   10 Execute	select * from phones where phone_books_id = '16'
+2019-07-23T03:59:11.909654Z	   10 Close stmt	
+2019-07-23T03:59:11.909781Z	   10 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:59:11.909815Z	   10 Execute	select * from emails where phone_books_id = '16'
+2019-07-23T03:59:11.909983Z	   10 Close stmt	
+2019-07-23T03:59:11.910534Z	   10 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:59:11.910599Z	   10 Execute	select * from phones where phone_books_id = '17'
+2019-07-23T03:59:11.910756Z	   10 Close stmt	
+2019-07-23T03:59:11.910845Z	   10 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:59:11.910874Z	   10 Execute	select * from emails where phone_books_id = '17'
+2019-07-23T03:59:11.911008Z	   10 Close stmt	
+2019-07-23T03:59:11.911565Z	   10 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:59:11.911634Z	   10 Execute	select * from phones where phone_books_id = '18'
+2019-07-23T03:59:11.911815Z	   10 Close stmt	
+2019-07-23T03:59:11.911909Z	   10 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:59:11.911939Z	   10 Execute	select * from emails where phone_books_id = '18'
+2019-07-23T03:59:11.912075Z	   10 Close stmt	
+2019-07-23T03:59:11.912238Z	   10 Close stmt	
+2019-07-23T03:59:11.912260Z	   10 Close stmt	
+2019-07-23T03:59:11.912280Z	   10 Close stmt	
+2019-07-23T03:59:11.912410Z	   10 Quit	
+2019-07-23T03:59:20.125710Z	   11 Connect	root@localhost on zipdev using TCP/IP
+2019-07-23T03:59:20.127695Z	   11 Prepare	select * from phone_books
+2019-07-23T03:59:20.127788Z	   11 Execute	select * from phone_books
+2019-07-23T03:59:20.133122Z	   11 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:59:20.133226Z	   11 Execute	select * from phones where phone_books_id = '1'
+2019-07-23T03:59:20.135110Z	   11 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:59:20.135168Z	   11 Execute	select * from emails where phone_books_id = '1'
+2019-07-23T03:59:20.135573Z	   11 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:59:20.135622Z	   11 Execute	select * from phones where phone_books_id = '3'
+2019-07-23T03:59:20.135818Z	   11 Close stmt	
+2019-07-23T03:59:20.135930Z	   11 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:59:20.136031Z	   11 Execute	select * from emails where phone_books_id = '3'
+2019-07-23T03:59:20.136329Z	   11 Close stmt	
+2019-07-23T03:59:20.136636Z	   11 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:59:20.136684Z	   11 Execute	select * from phones where phone_books_id = '4'
+2019-07-23T03:59:20.136893Z	   11 Close stmt	
+2019-07-23T03:59:20.137031Z	   11 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:59:20.137121Z	   11 Execute	select * from emails where phone_books_id = '4'
+2019-07-23T03:59:20.137428Z	   11 Close stmt	
+2019-07-23T03:59:20.137775Z	   11 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:59:20.137835Z	   11 Execute	select * from phones where phone_books_id = '5'
+2019-07-23T03:59:20.138061Z	   11 Close stmt	
+2019-07-23T03:59:20.138219Z	   11 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:59:20.138266Z	   11 Execute	select * from emails where phone_books_id = '5'
+2019-07-23T03:59:20.138516Z	   11 Close stmt	
+2019-07-23T03:59:20.138816Z	   11 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:59:20.138893Z	   11 Execute	select * from phones where phone_books_id = '6'
+2019-07-23T03:59:20.139122Z	   11 Close stmt	
+2019-07-23T03:59:20.139265Z	   11 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:59:20.139348Z	   11 Execute	select * from emails where phone_books_id = '6'
+2019-07-23T03:59:20.139627Z	   11 Close stmt	
+2019-07-23T03:59:20.139848Z	   11 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:59:20.139904Z	   11 Execute	select * from phones where phone_books_id = '7'
+2019-07-23T03:59:20.140088Z	   11 Close stmt	
+2019-07-23T03:59:20.140228Z	   11 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:59:20.140273Z	   11 Execute	select * from emails where phone_books_id = '7'
+2019-07-23T03:59:20.140470Z	   11 Close stmt	
+2019-07-23T03:59:20.140843Z	   11 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:59:20.140930Z	   11 Execute	select * from phones where phone_books_id = '11'
+2019-07-23T03:59:20.141145Z	   11 Close stmt	
+2019-07-23T03:59:20.141255Z	   11 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:59:20.141319Z	   11 Execute	select * from emails where phone_books_id = '11'
+2019-07-23T03:59:20.141541Z	   11 Close stmt	
+2019-07-23T03:59:20.141887Z	   11 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:59:20.141938Z	   11 Execute	select * from phones where phone_books_id = '12'
+2019-07-23T03:59:20.142145Z	   11 Close stmt	
+2019-07-23T03:59:20.142345Z	   11 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:59:20.142399Z	   11 Execute	select * from emails where phone_books_id = '12'
+2019-07-23T03:59:20.142638Z	   11 Close stmt	
+2019-07-23T03:59:20.142965Z	   11 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:59:20.143025Z	   11 Execute	select * from phones where phone_books_id = '13'
+2019-07-23T03:59:20.143215Z	   11 Close stmt	
+2019-07-23T03:59:20.143413Z	   11 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:59:20.143497Z	   11 Execute	select * from emails where phone_books_id = '13'
+2019-07-23T03:59:20.143721Z	   11 Close stmt	
+2019-07-23T03:59:20.143964Z	   11 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:59:20.144031Z	   11 Execute	select * from phones where phone_books_id = '14'
+2019-07-23T03:59:20.144205Z	   11 Close stmt	
+2019-07-23T03:59:20.144302Z	   11 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:59:20.144366Z	   11 Execute	select * from emails where phone_books_id = '14'
+2019-07-23T03:59:20.144543Z	   11 Close stmt	
+2019-07-23T03:59:20.144746Z	   11 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:59:20.144819Z	   11 Execute	select * from phones where phone_books_id = '15'
+2019-07-23T03:59:20.145065Z	   11 Close stmt	
+2019-07-23T03:59:20.145183Z	   11 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:59:20.145238Z	   11 Execute	select * from emails where phone_books_id = '15'
+2019-07-23T03:59:20.145452Z	   11 Close stmt	
+2019-07-23T03:59:20.145760Z	   11 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:59:20.145800Z	   11 Execute	select * from phones where phone_books_id = '16'
+2019-07-23T03:59:20.145970Z	   11 Close stmt	
+2019-07-23T03:59:20.146048Z	   11 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:59:20.146108Z	   11 Execute	select * from emails where phone_books_id = '16'
+2019-07-23T03:59:20.146285Z	   11 Close stmt	
+2019-07-23T03:59:20.146627Z	   11 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:59:20.146701Z	   11 Execute	select * from phones where phone_books_id = '17'
+2019-07-23T03:59:20.146927Z	   11 Close stmt	
+2019-07-23T03:59:20.147077Z	   11 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:59:20.147142Z	   11 Execute	select * from emails where phone_books_id = '17'
+2019-07-23T03:59:20.147406Z	   11 Close stmt	
+2019-07-23T03:59:20.147711Z	   11 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:59:20.147763Z	   11 Execute	select * from phones where phone_books_id = '18'
+2019-07-23T03:59:20.147966Z	   11 Close stmt	
+2019-07-23T03:59:20.148087Z	   11 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:59:20.148127Z	   11 Execute	select * from emails where phone_books_id = '18'
+2019-07-23T03:59:20.148374Z	   11 Close stmt	
+2019-07-23T03:59:20.148811Z	   11 Close stmt	
+2019-07-23T03:59:20.148846Z	   11 Close stmt	
+2019-07-23T03:59:20.148874Z	   11 Close stmt	
+2019-07-23T03:59:20.148927Z	   11 Quit	
+2019-07-23T03:59:52.102543Z	   12 Connect	root@localhost on zipdev using TCP/IP
+2019-07-23T03:59:52.105383Z	   12 Prepare	select * from phone_books
+2019-07-23T03:59:52.105558Z	   12 Execute	select * from phone_books
+2019-07-23T03:59:52.112601Z	   12 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:59:52.112728Z	   12 Execute	select * from phones where phone_books_id = '1'
+2019-07-23T03:59:52.115283Z	   12 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:59:52.115402Z	   12 Execute	select * from emails where phone_books_id = '1'
+2019-07-23T03:59:52.116047Z	   12 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:59:52.116186Z	   12 Execute	select * from phones where phone_books_id = '3'
+2019-07-23T03:59:52.116552Z	   12 Close stmt	
+2019-07-23T03:59:52.116761Z	   12 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:59:52.116823Z	   12 Execute	select * from emails where phone_books_id = '3'
+2019-07-23T03:59:52.117107Z	   12 Close stmt	
+2019-07-23T03:59:52.117480Z	   12 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:59:52.117668Z	   12 Execute	select * from phones where phone_books_id = '4'
+2019-07-23T03:59:52.117980Z	   12 Close stmt	
+2019-07-23T03:59:52.118175Z	   12 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:59:52.118231Z	   12 Execute	select * from emails where phone_books_id = '4'
+2019-07-23T03:59:52.118485Z	   12 Close stmt	
+2019-07-23T03:59:52.118775Z	   12 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:59:52.118818Z	   12 Execute	select * from phones where phone_books_id = '5'
+2019-07-23T03:59:52.119036Z	   12 Close stmt	
+2019-07-23T03:59:52.119160Z	   12 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:59:52.119218Z	   12 Execute	select * from emails where phone_books_id = '5'
+2019-07-23T03:59:52.119437Z	   12 Close stmt	
+2019-07-23T03:59:52.119889Z	   12 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:59:52.119943Z	   12 Execute	select * from phones where phone_books_id = '6'
+2019-07-23T03:59:52.120299Z	   12 Close stmt	
+2019-07-23T03:59:52.120454Z	   12 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:59:52.120543Z	   12 Execute	select * from emails where phone_books_id = '6'
+2019-07-23T03:59:52.120859Z	   12 Close stmt	
+2019-07-23T03:59:52.121030Z	   12 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:59:52.121115Z	   12 Execute	select * from phones where phone_books_id = '7'
+2019-07-23T03:59:52.121347Z	   12 Close stmt	
+2019-07-23T03:59:52.121512Z	   12 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:59:52.121566Z	   12 Execute	select * from emails where phone_books_id = '7'
+2019-07-23T03:59:52.121865Z	   12 Close stmt	
+2019-07-23T03:59:52.122226Z	   12 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:59:52.122280Z	   12 Execute	select * from phones where phone_books_id = '11'
+2019-07-23T03:59:52.122522Z	   12 Close stmt	
+2019-07-23T03:59:52.122677Z	   12 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:59:52.122765Z	   12 Execute	select * from emails where phone_books_id = '11'
+2019-07-23T03:59:52.123049Z	   12 Close stmt	
+2019-07-23T03:59:52.123449Z	   12 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:59:52.123521Z	   12 Execute	select * from phones where phone_books_id = '12'
+2019-07-23T03:59:52.123831Z	   12 Close stmt	
+2019-07-23T03:59:52.124030Z	   12 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:59:52.124070Z	   12 Execute	select * from emails where phone_books_id = '12'
+2019-07-23T03:59:52.124270Z	   12 Close stmt	
+2019-07-23T03:59:52.124631Z	   12 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:59:52.124692Z	   12 Execute	select * from phones where phone_books_id = '13'
+2019-07-23T03:59:52.124913Z	   12 Close stmt	
+2019-07-23T03:59:52.125103Z	   12 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:59:52.125142Z	   12 Execute	select * from emails where phone_books_id = '13'
+2019-07-23T03:59:52.125367Z	   12 Close stmt	
+2019-07-23T03:59:52.125770Z	   12 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:59:52.125817Z	   12 Execute	select * from phones where phone_books_id = '14'
+2019-07-23T03:59:52.126046Z	   12 Close stmt	
+2019-07-23T03:59:52.126154Z	   12 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:59:52.126263Z	   12 Execute	select * from emails where phone_books_id = '14'
+2019-07-23T03:59:52.126530Z	   12 Close stmt	
+2019-07-23T03:59:52.126725Z	   12 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:59:52.126799Z	   12 Execute	select * from phones where phone_books_id = '15'
+2019-07-23T03:59:52.127004Z	   12 Close stmt	
+2019-07-23T03:59:52.127135Z	   12 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:59:52.127188Z	   12 Execute	select * from emails where phone_books_id = '15'
+2019-07-23T03:59:52.127512Z	   12 Close stmt	
+2019-07-23T03:59:52.127812Z	   12 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:59:52.127879Z	   12 Execute	select * from phones where phone_books_id = '16'
+2019-07-23T03:59:52.128139Z	   12 Close stmt	
+2019-07-23T03:59:52.128390Z	   12 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:59:52.128631Z	   12 Execute	select * from emails where phone_books_id = '16'
+2019-07-23T03:59:52.129782Z	   12 Close stmt	
+2019-07-23T03:59:52.129954Z	   12 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:59:52.130089Z	   12 Execute	select * from phones where phone_books_id = '17'
+2019-07-23T03:59:52.130520Z	   12 Close stmt	
+2019-07-23T03:59:52.130646Z	   12 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:59:52.130763Z	   12 Execute	select * from emails where phone_books_id = '17'
+2019-07-23T03:59:52.131116Z	   12 Close stmt	
+2019-07-23T03:59:52.131403Z	   12 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T03:59:52.131520Z	   12 Execute	select * from phones where phone_books_id = '18'
+2019-07-23T03:59:52.131788Z	   12 Close stmt	
+2019-07-23T03:59:52.131927Z	   12 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T03:59:52.131971Z	   12 Execute	select * from emails where phone_books_id = '18'
+2019-07-23T03:59:52.132198Z	   12 Close stmt	
+2019-07-23T03:59:52.143506Z	   12 Close stmt	
+2019-07-23T03:59:52.143601Z	   12 Close stmt	
+2019-07-23T03:59:52.143649Z	   12 Close stmt	
+2019-07-23T03:59:52.143692Z	   12 Quit	
+2019-07-23T04:02:17.883284Z	   13 Connect	root@localhost on zipdev using TCP/IP
+2019-07-23T04:02:17.885259Z	   13 Prepare	select * from phone_books
+2019-07-23T04:02:17.885399Z	   13 Execute	select * from phone_books
+2019-07-23T04:02:17.891545Z	   13 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T04:02:17.891667Z	   13 Execute	select * from phones where phone_books_id = '1'
+2019-07-23T04:02:17.893880Z	   13 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T04:02:17.893936Z	   13 Execute	select * from emails where phone_books_id = '1'
+2019-07-23T04:02:17.894337Z	   13 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T04:02:17.894450Z	   13 Execute	select * from phones where phone_books_id = '3'
+2019-07-23T04:02:17.894678Z	   13 Close stmt	
+2019-07-23T04:02:17.894858Z	   13 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T04:02:17.894916Z	   13 Execute	select * from emails where phone_books_id = '3'
+2019-07-23T04:02:17.895188Z	   13 Close stmt	
+2019-07-23T04:02:17.895416Z	   13 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T04:02:17.895500Z	   13 Execute	select * from phones where phone_books_id = '4'
+2019-07-23T04:02:17.895777Z	   13 Close stmt	
+2019-07-23T04:02:17.895952Z	   13 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T04:02:17.895998Z	   13 Execute	select * from emails where phone_books_id = '4'
+2019-07-23T04:02:17.896222Z	   13 Close stmt	
+2019-07-23T04:02:17.896457Z	   13 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T04:02:17.896534Z	   13 Execute	select * from phones where phone_books_id = '5'
+2019-07-23T04:02:17.896735Z	   13 Close stmt	
+2019-07-23T04:02:17.896846Z	   13 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T04:02:17.896890Z	   13 Execute	select * from emails where phone_books_id = '5'
+2019-07-23T04:02:17.897082Z	   13 Close stmt	
+2019-07-23T04:02:17.897236Z	   13 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T04:02:17.897354Z	   13 Execute	select * from phones where phone_books_id = '6'
+2019-07-23T04:02:17.897645Z	   13 Close stmt	
+2019-07-23T04:02:17.897803Z	   13 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T04:02:17.897840Z	   13 Execute	select * from emails where phone_books_id = '6'
+2019-07-23T04:02:17.898026Z	   13 Close stmt	
+2019-07-23T04:02:17.898148Z	   13 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T04:02:17.898181Z	   13 Execute	select * from phones where phone_books_id = '7'
+2019-07-23T04:02:17.898354Z	   13 Close stmt	
+2019-07-23T04:02:17.898469Z	   13 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T04:02:17.898503Z	   13 Execute	select * from emails where phone_books_id = '7'
+2019-07-23T04:02:17.898657Z	   13 Close stmt	
+2019-07-23T04:02:17.898796Z	   13 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T04:02:17.898830Z	   13 Execute	select * from phones where phone_books_id = '11'
+2019-07-23T04:02:17.899042Z	   13 Close stmt	
+2019-07-23T04:02:17.899175Z	   13 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T04:02:17.899209Z	   13 Execute	select * from emails where phone_books_id = '11'
+2019-07-23T04:02:17.899499Z	   13 Close stmt	
+2019-07-23T04:02:17.899686Z	   13 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T04:02:17.899721Z	   13 Execute	select * from phones where phone_books_id = '12'
+2019-07-23T04:02:17.899890Z	   13 Close stmt	
+2019-07-23T04:02:17.900001Z	   13 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T04:02:17.900034Z	   13 Execute	select * from emails where phone_books_id = '12'
+2019-07-23T04:02:17.900191Z	   13 Close stmt	
+2019-07-23T04:02:17.900352Z	   13 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T04:02:17.900441Z	   13 Execute	select * from phones where phone_books_id = '13'
+2019-07-23T04:02:17.900646Z	   13 Close stmt	
+2019-07-23T04:02:17.900767Z	   13 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T04:02:17.900807Z	   13 Execute	select * from emails where phone_books_id = '13'
+2019-07-23T04:02:17.901076Z	   13 Close stmt	
+2019-07-23T04:02:17.901240Z	   13 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T04:02:17.901399Z	   13 Execute	select * from phones where phone_books_id = '14'
+2019-07-23T04:02:17.901696Z	   13 Close stmt	
+2019-07-23T04:02:17.901851Z	   13 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T04:02:17.901913Z	   13 Execute	select * from emails where phone_books_id = '14'
+2019-07-23T04:02:17.902141Z	   13 Close stmt	
+2019-07-23T04:02:17.902294Z	   13 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T04:02:17.902336Z	   13 Execute	select * from phones where phone_books_id = '15'
+2019-07-23T04:02:17.902510Z	   13 Close stmt	
+2019-07-23T04:02:17.902637Z	   13 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T04:02:17.902669Z	   13 Execute	select * from emails where phone_books_id = '15'
+2019-07-23T04:02:17.902826Z	   13 Close stmt	
+2019-07-23T04:02:17.902964Z	   13 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T04:02:17.903002Z	   13 Execute	select * from phones where phone_books_id = '16'
+2019-07-23T04:02:17.903156Z	   13 Close stmt	
+2019-07-23T04:02:17.903263Z	   13 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T04:02:17.903314Z	   13 Execute	select * from emails where phone_books_id = '16'
+2019-07-23T04:02:17.903498Z	   13 Close stmt	
+2019-07-23T04:02:17.903639Z	   13 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T04:02:17.903677Z	   13 Execute	select * from phones where phone_books_id = '17'
+2019-07-23T04:02:17.903838Z	   13 Close stmt	
+2019-07-23T04:02:17.903958Z	   13 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T04:02:17.904059Z	   13 Execute	select * from emails where phone_books_id = '17'
+2019-07-23T04:02:17.904350Z	   13 Close stmt	
+2019-07-23T04:02:17.904530Z	   13 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T04:02:17.904574Z	   13 Execute	select * from phones where phone_books_id = '18'
+2019-07-23T04:02:17.904781Z	   13 Close stmt	
+2019-07-23T04:02:17.904902Z	   13 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T04:02:17.904959Z	   13 Execute	select * from emails where phone_books_id = '18'
+2019-07-23T04:02:17.905125Z	   13 Close stmt	
+2019-07-23T04:02:17.905495Z	   13 Close stmt	
+2019-07-23T04:02:17.905528Z	   13 Close stmt	
+2019-07-23T04:02:17.905556Z	   13 Close stmt	
+2019-07-23T04:02:17.905610Z	   13 Quit	
+2019-07-23T04:13:11.900351Z	   14 Connect	root@localhost on zipdev using TCP/IP
+2019-07-23T04:13:11.901666Z	   14 Query	/* mysql-connector-java-5.1.47 ( Revision: fe1903b1ecb4a96a917f7ed3190d80c049b1de29 ) */SELECT  @@session.auto_increment_increment AS auto_increment_increment, @@character_set_client AS character_set_client, @@character_set_connection AS character_set_connection, @@character_set_results AS character_set_results, @@character_set_server AS character_set_server, @@collation_server AS collation_server, @@collation_connection AS collation_connection, @@init_connect AS init_connect, @@interactive_timeout AS interactive_timeout, @@license AS license, @@lower_case_table_names AS lower_case_table_names, @@max_allowed_packet AS max_allowed_packet, @@net_buffer_length AS net_buffer_length, @@net_write_timeout AS net_write_timeout, @@query_cache_size AS query_cache_size, @@query_cache_type AS query_cache_type, @@sql_mode AS sql_mode, @@system_time_zone AS system_time_zone, @@time_zone AS time_zone, @@transaction_isolation AS transaction_isolation, @@wait_timeout AS wait_timeout
+2019-07-23T04:13:11.905828Z	   14 Query	SET NAMES utf8mb4
+2019-07-23T04:13:11.906483Z	   14 Query	SET autocommit=1
+2019-07-23T04:13:11.906731Z	   14 Query	SET sql_mode='STRICT_ALL_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,STRICT_TRANS_TABLES'
+2019-07-23T04:13:11.921625Z	   14 Query	/* ApplicationName=PhpStorm 2018.2.2 */ set session transaction read write
+2019-07-23T04:13:11.929378Z	   14 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:11.931683Z	   14 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select @@session.transaction_read_only
+2019-07-23T04:13:11.932100Z	   14 Query	/* ApplicationName=PhpStorm 2018.2.2 */ use zipdev
+2019-07-23T04:13:11.932936Z	   14 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:11.943275Z	   14 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:11.945633Z	   14 Query	/* ApplicationName=PhpStorm 2018.2.2 */ drop table emails
+2019-07-23T04:13:11.956598Z	   14 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:11.966958Z	   14 Query	/* ApplicationName=PhpStorm 2018.2.2 */ drop table phones
+2019-07-23T04:13:11.972893Z	   14 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:11.974852Z	   14 Query	/* ApplicationName=PhpStorm 2018.2.2 */ drop table phone_books
+2019-07-23T04:13:11.981682Z	   14 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:11.987101Z	   14 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SELECT @@session.transaction_isolation
+2019-07-23T04:13:11.989109Z	   14 Quit	
+2019-07-23T04:13:12.013409Z	   15 Connect	root@localhost on zipdev using TCP/IP
+2019-07-23T04:13:12.014260Z	   15 Query	/* mysql-connector-java-5.1.47 ( Revision: fe1903b1ecb4a96a917f7ed3190d80c049b1de29 ) */SELECT  @@session.auto_increment_increment AS auto_increment_increment, @@character_set_client AS character_set_client, @@character_set_connection AS character_set_connection, @@character_set_results AS character_set_results, @@character_set_server AS character_set_server, @@collation_server AS collation_server, @@collation_connection AS collation_connection, @@init_connect AS init_connect, @@interactive_timeout AS interactive_timeout, @@license AS license, @@lower_case_table_names AS lower_case_table_names, @@max_allowed_packet AS max_allowed_packet, @@net_buffer_length AS net_buffer_length, @@net_write_timeout AS net_write_timeout, @@query_cache_size AS query_cache_size, @@query_cache_type AS query_cache_type, @@sql_mode AS sql_mode, @@system_time_zone AS system_time_zone, @@time_zone AS time_zone, @@transaction_isolation AS transaction_isolation, @@wait_timeout AS wait_timeout
+2019-07-23T04:13:12.015299Z	   15 Query	SET NAMES utf8mb4
+2019-07-23T04:13:12.015532Z	   15 Query	SET autocommit=1
+2019-07-23T04:13:12.015754Z	   15 Query	SET sql_mode='STRICT_ALL_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,STRICT_TRANS_TABLES'
+2019-07-23T04:13:12.105582Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET autocommit=1
+2019-07-23T04:13:12.129048Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select database(), schema(), left(user(),instr(concat(user(),'@'),'@')-1), @@version_comment
+2019-07-23T04:13:12.196507Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET autocommit=1
+2019-07-23T04:13:12.197119Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select database(), schema(), left(user(),instr(concat(user(),'@'),'@')-1), @@version_comment
+2019-07-23T04:13:12.337124Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:12.341027Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select @@default_storage_engine, @@default_tmp_storage_engine
+2019-07-23T04:13:12.365345Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:12.369214Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET autocommit=0
+2019-07-23T04:13:12.369696Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ commit
+2019-07-23T04:13:12.370182Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ rollback
+2019-07-23T04:13:12.370366Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET autocommit=1
+2019-07-23T04:13:12.375754Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:12.377283Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select @@default_storage_engine, @@default_tmp_storage_engine
+2019-07-23T04:13:12.382800Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:12.385753Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET autocommit=0
+2019-07-23T04:13:12.400784Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:12.401804Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select @@GLOBAL.lower_case_table_names
+2019-07-23T04:13:12.413374Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:12.414357Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select schema_name, default_collation_name
+from information_schema.schemata
+order by if(schema() = schema_name, 1, 2), schema_name
+2019-07-23T04:13:12.428782Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ commit
+2019-07-23T04:13:12.429651Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:12.430872Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:12.431794Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ rollback
+2019-07-23T04:13:12.431941Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET autocommit=1
+2019-07-23T04:13:12.484690Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET autocommit=0
+2019-07-23T04:13:12.488677Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:12.489927Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select
+  collation_name,
+  character_set_name,
+  is_default collate utf8_general_ci /* is_default */ = 'Yes' as is_default
+from information_schema.collations
+2019-07-23T04:13:12.512366Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ commit
+2019-07-23T04:13:12.513428Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:12.514691Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ rollback
+2019-07-23T04:13:12.514859Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET autocommit=1
+2019-07-23T04:13:12.522485Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:12.523488Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select @@default_storage_engine, @@default_tmp_storage_engine
+2019-07-23T04:13:12.529462Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:12.532643Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET autocommit=0
+2019-07-23T04:13:12.535464Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:12.536353Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select @@GLOBAL.lower_case_table_names
+2019-07-23T04:13:12.543367Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:12.544375Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select schema_name, default_collation_name
+from information_schema.schemata
+order by if(schema() = schema_name, 1, 2), schema_name
+2019-07-23T04:13:12.564163Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:12.574395Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select table_name, table_type, table_comment, engine, table_collation
+from information_schema.tables
+where table_schema = 'zipdev'
+2019-07-23T04:13:12.583421Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:12.584667Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET net_write_timeout=600
+2019-07-23T04:13:12.584893Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select
+  ordinal_position,
+  column_name,
+  column_type,
+  column_default,
+/* null */
+  generation_expression,
+  table_name,
+  column_comment,
+  is_nullable,
+  extra,
+  collation_name
+from information_schema.columns
+where table_schema = 'zipdev'
+order by table_name, ordinal_position
+2019-07-23T04:13:12.587277Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET net_write_timeout=60
+2019-07-23T04:13:12.596239Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:12.598988Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select
+  table_name,
+  index_name,
+  /* null */ index_comment,
+  index_type,
+  group_concat(replace(replace(column_name, '\\', '\\\\'), '\n', '\\n') order by seq_in_index separator '\n' ) as column_names,
+  non_unique
+/* from (select * */
+from information_schema.statistics
+where table_schema = 'zipdev' and
+      index_schema = 'zipdev' and
+      index_name collate utf8_general_ci /* index_name */ <> 'PRIMARY'
+/* order by table_catalog, table_schema, table_name, index_name, index_type, non_unique, seq_in_index) s */
+group by
+  table_catalog,
+  table_schema,
+  table_name,
+  index_name,
+  index_comment,
+  index_type,
+  non_unique
+2019-07-23T04:13:12.608350Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:12.609669Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select
+  c.constraint_name,
+  c.table_name,
+  c.constraint_type,
+  group_concat(replace(replace(u.column_name, '\\', '\\\\'), '\n', '\\n') order by u.ordinal_position separator '\n' ) as column_names,
+  u.referenced_table_schema,
+  u.referenced_table_name,
+  group_concat(replace(replace(u.referenced_column_name, '\\', '\\\\'), '\n', '\\n') order by u.position_in_unique_constraint separator '\n') as ref_column_names,
+  r.match_option,
+  r.update_rule,
+  r.delete_rule
+from information_schema.table_constraints c
+  left join information_schema.key_column_usage u on
+      u.constraint_schema   = c.constraint_schema
+  and u.constraint_name     = c.constraint_name
+  and u.table_name = c.table_name
+  and u.table_schema = 'zipdev'
+  and if (c.constraint_type collate utf8_general_ci /* c.constraint_type */ = 'UNIQUE', u.referenced_table_name is null, true)
+  left join information_schema.referential_constraints r on
+      r.constraint_schema   = c.constraint_schema
+  and r.constraint_name     = c.constraint_name
+where c.table_schema = 'zipdev'
+  and u.table_schema = 'zipdev'
+group by
+    c.constraint_schema
+  , c.constraint_name
+  , c.table_schema
+  , c.table_name
+  , c.constraint_type
+  , u.referenced_table_schema
+  , u.referenced_table_name
+  , r.match_option
+  , r.update_rule
+  , r.delete_rule
+order by
+    c.table_schema
+  , c.table_name
+  , c.constraint_schema
+  , c.constraint_name
+2019-07-23T04:13:13.668899Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:13.670282Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select
+  trigger_name,
+  event_object_table,
+  event_manipulation,
+  action_timing
+from information_schema.triggers
+where trigger_schema = 'zipdev'
+2019-07-23T04:13:13.695584Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:13.697659Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select
+  event_name,
+  event_comment,
+  definer,
+  event_type = 'RECURRING' recurring,
+  interval_value,
+  interval_field,
+  cast(coalesce(starts, execute_at) as char) starts,
+  cast(ends as char) ends,
+  status,
+  on_completion = 'PRESERVE' preserve,
+  last_executed
+from information_schema.events
+where event_schema = 'zipdev'
+2019-07-23T04:13:13.710010Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:13.711425Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select
+  specific_name,
+  routine_type,
+  routine_definition,
+  routine_comment,
+  dtd_identifier
+from information_schema.routines
+where routine_schema = 'zipdev'
+2019-07-23T04:13:13.729072Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:13.731086Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select table_name from information_schema.tables
+where table_schema collate utf8_general_ci /* lower(table_schema) */ = 'information_schema'
+  and table_name collate utf8_general_ci /* lower(table_name) */ = 'parameters'
+2019-07-23T04:13:13.746520Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:13.747914Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET net_write_timeout=600
+2019-07-23T04:13:13.748332Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select specific_name,
+  ordinal_position,
+  parameter_name,
+  parameter_mode,
+  dtd_identifier
+from information_schema.parameters
+where specific_schema = 'zipdev' and ordinal_position > 0
+order by specific_name, ordinal_position
+2019-07-23T04:13:13.751798Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET net_write_timeout=60
+2019-07-23T04:13:13.759800Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:13.760901Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET net_write_timeout=600
+2019-07-23T04:13:13.761104Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select table_name, view_definition
+from information_schema.views
+where table_schema = 'zipdev'
+2019-07-23T04:13:13.761934Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET net_write_timeout=60
+2019-07-23T04:13:13.768887Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:13.769941Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET net_write_timeout=600
+2019-07-23T04:13:13.770120Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select specific_name, routine_definition
+from information_schema.routines
+where routine_schema = 'zipdev'
+2019-07-23T04:13:13.773573Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET net_write_timeout=60
+2019-07-23T04:13:13.780071Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:13.780994Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET net_write_timeout=600
+2019-07-23T04:13:13.781288Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select
+  trigger_name,
+  event_object_table,
+  action_statement
+from information_schema.triggers
+where trigger_schema = 'zipdev'
+2019-07-23T04:13:13.795572Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET net_write_timeout=60
+2019-07-23T04:13:13.801749Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:13.802984Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET net_write_timeout=600
+2019-07-23T04:13:13.803207Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select
+  event_name,
+  event_definition
+from information_schema.events
+where event_schema = 'zipdev'
+2019-07-23T04:13:13.803863Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET net_write_timeout=60
+2019-07-23T04:13:13.808230Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ commit
+2019-07-23T04:13:13.808977Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:13.810157Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:13.811394Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:13.812797Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:13.813793Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:13.814819Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:13.815831Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:13.816999Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:13.818120Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:13.819177Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:13.820962Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:13.821980Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:13.823069Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:13.824132Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:13.825052Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:13.825799Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ rollback
+2019-07-23T04:13:13.825974Z	   15 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET autocommit=1
+2019-07-23T04:13:13.839185Z	   15 Quit	
+2019-07-23T04:13:14.611001Z	   16 Connect	root@localhost on zipdev using TCP/IP
+2019-07-23T04:13:14.611673Z	   16 Query	/* mysql-connector-java-5.1.47 ( Revision: fe1903b1ecb4a96a917f7ed3190d80c049b1de29 ) */SELECT  @@session.auto_increment_increment AS auto_increment_increment, @@character_set_client AS character_set_client, @@character_set_connection AS character_set_connection, @@character_set_results AS character_set_results, @@character_set_server AS character_set_server, @@collation_server AS collation_server, @@collation_connection AS collation_connection, @@init_connect AS init_connect, @@interactive_timeout AS interactive_timeout, @@license AS license, @@lower_case_table_names AS lower_case_table_names, @@max_allowed_packet AS max_allowed_packet, @@net_buffer_length AS net_buffer_length, @@net_write_timeout AS net_write_timeout, @@query_cache_size AS query_cache_size, @@query_cache_type AS query_cache_type, @@sql_mode AS sql_mode, @@system_time_zone AS system_time_zone, @@time_zone AS time_zone, @@transaction_isolation AS transaction_isolation, @@wait_timeout AS wait_timeout
+2019-07-23T04:13:14.612868Z	   16 Query	SET NAMES utf8mb4
+2019-07-23T04:13:14.613253Z	   16 Query	SET autocommit=1
+2019-07-23T04:13:14.613599Z	   16 Query	SET sql_mode='STRICT_ALL_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,STRICT_TRANS_TABLES'
+2019-07-23T04:13:14.619826Z	   16 Query	/* ApplicationName=PhpStorm 2018.2.2 */ set session transaction read write
+2019-07-23T04:13:14.622699Z	   16 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:14.624320Z	   16 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select database()
+2019-07-23T04:13:14.632318Z	   16 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:14.634555Z	   16 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select @@session.transaction_read_only
+2019-07-23T04:13:14.636397Z	   16 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:14.639178Z	   16 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select @@session.transaction_read_only
+2019-07-23T04:13:14.639495Z	   16 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET net_write_timeout=600
+2019-07-23T04:13:14.639770Z	   16 Query	/* ApplicationName=PhpStorm 2018.2.2 */ create table phone_books (
+  id INT UNSIGNED NOT NULL auto_increment,
+  first_name VARCHAR(30) NOT NULL,
+  sur_name VARCHAR(30) NOT NULL,
+  image varchar(255) NULL ,
+    PRIMARY KEY (id)
+) ENGINE=INNODB
+2019-07-23T04:13:14.686050Z	   16 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:14.689418Z	   16 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:14.691076Z	   16 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select database()
+2019-07-23T04:13:14.697653Z	   16 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:14.700811Z	   16 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SELECT @@session.transaction_isolation
+2019-07-23T04:13:14.716385Z	   17 Connect	root@localhost on zipdev using TCP/IP
+2019-07-23T04:13:14.716927Z	   17 Query	/* mysql-connector-java-5.1.47 ( Revision: fe1903b1ecb4a96a917f7ed3190d80c049b1de29 ) */SELECT  @@session.auto_increment_increment AS auto_increment_increment, @@character_set_client AS character_set_client, @@character_set_connection AS character_set_connection, @@character_set_results AS character_set_results, @@character_set_server AS character_set_server, @@collation_server AS collation_server, @@collation_connection AS collation_connection, @@init_connect AS init_connect, @@interactive_timeout AS interactive_timeout, @@license AS license, @@lower_case_table_names AS lower_case_table_names, @@max_allowed_packet AS max_allowed_packet, @@net_buffer_length AS net_buffer_length, @@net_write_timeout AS net_write_timeout, @@query_cache_size AS query_cache_size, @@query_cache_type AS query_cache_type, @@sql_mode AS sql_mode, @@system_time_zone AS system_time_zone, @@time_zone AS time_zone, @@transaction_isolation AS transaction_isolation, @@wait_timeout AS wait_timeout
+2019-07-23T04:13:14.718059Z	   17 Query	SET NAMES utf8mb4
+2019-07-23T04:13:14.718532Z	   17 Query	SET autocommit=1
+2019-07-23T04:13:14.718837Z	   17 Query	SET sql_mode='STRICT_ALL_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,STRICT_TRANS_TABLES'
+2019-07-23T04:13:14.728478Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET autocommit=1
+2019-07-23T04:13:14.729082Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select database(), schema(), left(user(),instr(concat(user(),'@'),'@')-1), @@version_comment
+2019-07-23T04:13:14.744680Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET autocommit=1
+2019-07-23T04:13:14.745344Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select database(), schema(), left(user(),instr(concat(user(),'@'),'@')-1), @@version_comment
+2019-07-23T04:13:14.750774Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:14.751843Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select @@default_storage_engine, @@default_tmp_storage_engine
+2019-07-23T04:13:14.757575Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:14.759925Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET autocommit=0
+2019-07-23T04:13:14.760270Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ commit
+2019-07-23T04:13:14.760635Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ rollback
+2019-07-23T04:13:14.760865Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET autocommit=1
+2019-07-23T04:13:14.765591Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:14.766390Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select @@default_storage_engine, @@default_tmp_storage_engine
+2019-07-23T04:13:14.774195Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:14.776387Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET autocommit=0
+2019-07-23T04:13:14.779324Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:14.780397Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select @@GLOBAL.lower_case_table_names
+2019-07-23T04:13:14.787009Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:14.788111Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select schema_name, default_collation_name
+from information_schema.schemata
+order by if(schema() = schema_name, 1, 2), schema_name
+2019-07-23T04:13:14.795280Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ commit
+2019-07-23T04:13:14.796043Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:14.797295Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:14.798140Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ rollback
+2019-07-23T04:13:14.798331Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET autocommit=1
+2019-07-23T04:13:14.800056Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET autocommit=0
+2019-07-23T04:13:14.803175Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:14.804232Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select
+  collation_name,
+  character_set_name,
+  is_default collate utf8_general_ci /* is_default */ = 'Yes' as is_default
+from information_schema.collations
+2019-07-23T04:13:14.817081Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ commit
+2019-07-23T04:13:14.818145Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:14.819449Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ rollback
+2019-07-23T04:13:14.819623Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET autocommit=1
+2019-07-23T04:13:14.824681Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:14.825690Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select @@default_storage_engine, @@default_tmp_storage_engine
+2019-07-23T04:13:14.831174Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:14.833882Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET autocommit=0
+2019-07-23T04:13:14.836890Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:14.837868Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select @@GLOBAL.lower_case_table_names
+2019-07-23T04:13:14.845814Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:14.846708Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select schema_name, default_collation_name
+from information_schema.schemata
+order by if(schema() = schema_name, 1, 2), schema_name
+2019-07-23T04:13:14.856118Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:14.857354Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select table_name, table_type, table_comment, engine, table_collation
+from information_schema.tables
+where table_schema = 'zipdev'
+2019-07-23T04:13:14.867127Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:14.868300Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET net_write_timeout=600
+2019-07-23T04:13:14.868494Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select
+  ordinal_position,
+  column_name,
+  column_type,
+  column_default,
+/* null */
+  generation_expression,
+  table_name,
+  column_comment,
+  is_nullable,
+  extra,
+  collation_name
+from information_schema.columns
+where table_schema = 'zipdev'
+order by table_name, ordinal_position
+2019-07-23T04:13:14.875507Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET net_write_timeout=60
+2019-07-23T04:13:14.885116Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:14.886510Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select
+  table_name,
+  index_name,
+  /* null */ index_comment,
+  index_type,
+  group_concat(replace(replace(column_name, '\\', '\\\\'), '\n', '\\n') order by seq_in_index separator '\n' ) as column_names,
+  non_unique
+/* from (select * */
+from information_schema.statistics
+where table_schema = 'zipdev' and
+      index_schema = 'zipdev' and
+      index_name collate utf8_general_ci /* index_name */ <> 'PRIMARY'
+/* order by table_catalog, table_schema, table_name, index_name, index_type, non_unique, seq_in_index) s */
+group by
+  table_catalog,
+  table_schema,
+  table_name,
+  index_name,
+  index_comment,
+  index_type,
+  non_unique
+2019-07-23T04:13:14.897011Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:14.899007Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select
+  c.constraint_name,
+  c.table_name,
+  c.constraint_type,
+  group_concat(replace(replace(u.column_name, '\\', '\\\\'), '\n', '\\n') order by u.ordinal_position separator '\n' ) as column_names,
+  u.referenced_table_schema,
+  u.referenced_table_name,
+  group_concat(replace(replace(u.referenced_column_name, '\\', '\\\\'), '\n', '\\n') order by u.position_in_unique_constraint separator '\n') as ref_column_names,
+  r.match_option,
+  r.update_rule,
+  r.delete_rule
+from information_schema.table_constraints c
+  left join information_schema.key_column_usage u on
+      u.constraint_schema   = c.constraint_schema
+  and u.constraint_name     = c.constraint_name
+  and u.table_name = c.table_name
+  and u.table_schema = 'zipdev'
+  and if (c.constraint_type collate utf8_general_ci /* c.constraint_type */ = 'UNIQUE', u.referenced_table_name is null, true)
+  left join information_schema.referential_constraints r on
+      r.constraint_schema   = c.constraint_schema
+  and r.constraint_name     = c.constraint_name
+where c.table_schema = 'zipdev'
+  and u.table_schema = 'zipdev'
+group by
+    c.constraint_schema
+  , c.constraint_name
+  , c.table_schema
+  , c.table_name
+  , c.constraint_type
+  , u.referenced_table_schema
+  , u.referenced_table_name
+  , r.match_option
+  , r.update_rule
+  , r.delete_rule
+order by
+    c.table_schema
+  , c.table_name
+  , c.constraint_schema
+  , c.constraint_name
+2019-07-23T04:13:14.986466Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:14.987373Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select
+  trigger_name,
+  event_object_table,
+  event_manipulation,
+  action_timing
+from information_schema.triggers
+where trigger_schema = 'zipdev'
+2019-07-23T04:13:15.008482Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:15.009617Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select
+  event_name,
+  event_comment,
+  definer,
+  event_type = 'RECURRING' recurring,
+  interval_value,
+  interval_field,
+  cast(coalesce(starts, execute_at) as char) starts,
+  cast(ends as char) ends,
+  status,
+  on_completion = 'PRESERVE' preserve,
+  last_executed
+from information_schema.events
+where event_schema = 'zipdev'
+2019-07-23T04:13:15.019266Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:15.020740Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select
+  specific_name,
+  routine_type,
+  routine_definition,
+  routine_comment,
+  dtd_identifier
+from information_schema.routines
+where routine_schema = 'zipdev'
+2019-07-23T04:13:15.031610Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:15.032486Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select table_name from information_schema.tables
+where table_schema collate utf8_general_ci /* lower(table_schema) */ = 'information_schema'
+  and table_name collate utf8_general_ci /* lower(table_name) */ = 'parameters'
+2019-07-23T04:13:15.046383Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:15.047357Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET net_write_timeout=600
+2019-07-23T04:13:15.047535Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select specific_name,
+  ordinal_position,
+  parameter_name,
+  parameter_mode,
+  dtd_identifier
+from information_schema.parameters
+where specific_schema = 'zipdev' and ordinal_position > 0
+order by specific_name, ordinal_position
+2019-07-23T04:13:15.050074Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET net_write_timeout=60
+2019-07-23T04:13:15.056252Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:15.057148Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET net_write_timeout=600
+2019-07-23T04:13:15.057348Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select table_name, view_definition
+from information_schema.views
+where table_schema = 'zipdev'
+2019-07-23T04:13:15.058166Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET net_write_timeout=60
+2019-07-23T04:13:15.064312Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:15.065230Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET net_write_timeout=600
+2019-07-23T04:13:15.065400Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select specific_name, routine_definition
+from information_schema.routines
+where routine_schema = 'zipdev'
+2019-07-23T04:13:15.069126Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET net_write_timeout=60
+2019-07-23T04:13:15.075606Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:15.076604Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET net_write_timeout=600
+2019-07-23T04:13:15.076790Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select
+  trigger_name,
+  event_object_table,
+  action_statement
+from information_schema.triggers
+where trigger_schema = 'zipdev'
+2019-07-23T04:13:15.092281Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET net_write_timeout=60
+2019-07-23T04:13:15.099554Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:15.100585Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET net_write_timeout=600
+2019-07-23T04:13:15.100778Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select
+  event_name,
+  event_definition
+from information_schema.events
+where event_schema = 'zipdev'
+2019-07-23T04:13:15.101462Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET net_write_timeout=60
+2019-07-23T04:13:15.106366Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ commit
+2019-07-23T04:13:15.107090Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:15.108408Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:15.109521Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:15.110817Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:15.112056Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:15.113461Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:15.114758Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:15.116005Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:15.117088Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:15.118518Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:15.119713Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:15.120618Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:15.121801Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:15.122920Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:15.124054Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:15.124737Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ rollback
+2019-07-23T04:13:15.124892Z	   17 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET autocommit=1
+2019-07-23T04:13:15.138882Z	   17 Quit	
+2019-07-23T04:13:17.248406Z	   16 Query	/* ApplicationName=PhpStorm 2018.2.2 */ set session transaction read write
+2019-07-23T04:13:17.249126Z	   16 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select @@session.transaction_read_only
+2019-07-23T04:13:17.250806Z	   16 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:17.253148Z	   16 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select @@session.transaction_read_only
+2019-07-23T04:13:17.253494Z	   16 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET net_write_timeout=600
+2019-07-23T04:13:17.253717Z	   16 Query	/* ApplicationName=PhpStorm 2018.2.2 */ create table phones (
+  id INT UNSIGNED NOT NULL auto_increment,
+  phone VARCHAR(20) NOT NULL ,
+  phone_books_id INT UNSIGNED NOT NULL ,
+  PRIMARY KEY (id),
+  FOREIGN KEY (phone_books_id) REFERENCES  phone_books (id)
+    ON DELETE CASCADE
+) ENGINE=INNODB
+2019-07-23T04:13:17.292175Z	   16 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:17.295770Z	   16 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:17.297068Z	   16 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select database()
+2019-07-23T04:13:17.302245Z	   16 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:17.305138Z	   16 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SELECT @@session.transaction_isolation
+2019-07-23T04:13:17.317254Z	   18 Connect	root@localhost on zipdev using TCP/IP
+2019-07-23T04:13:17.317824Z	   18 Query	/* mysql-connector-java-5.1.47 ( Revision: fe1903b1ecb4a96a917f7ed3190d80c049b1de29 ) */SELECT  @@session.auto_increment_increment AS auto_increment_increment, @@character_set_client AS character_set_client, @@character_set_connection AS character_set_connection, @@character_set_results AS character_set_results, @@character_set_server AS character_set_server, @@collation_server AS collation_server, @@collation_connection AS collation_connection, @@init_connect AS init_connect, @@interactive_timeout AS interactive_timeout, @@license AS license, @@lower_case_table_names AS lower_case_table_names, @@max_allowed_packet AS max_allowed_packet, @@net_buffer_length AS net_buffer_length, @@net_write_timeout AS net_write_timeout, @@query_cache_size AS query_cache_size, @@query_cache_type AS query_cache_type, @@sql_mode AS sql_mode, @@system_time_zone AS system_time_zone, @@time_zone AS time_zone, @@transaction_isolation AS transaction_isolation, @@wait_timeout AS wait_timeout
+2019-07-23T04:13:17.318368Z	   18 Query	SET NAMES utf8mb4
+2019-07-23T04:13:17.318656Z	   18 Query	SET autocommit=1
+2019-07-23T04:13:17.318931Z	   18 Query	SET sql_mode='STRICT_ALL_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,STRICT_TRANS_TABLES'
+2019-07-23T04:13:17.328946Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET autocommit=1
+2019-07-23T04:13:17.329526Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select database(), schema(), left(user(),instr(concat(user(),'@'),'@')-1), @@version_comment
+2019-07-23T04:13:17.343891Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET autocommit=1
+2019-07-23T04:13:17.344568Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select database(), schema(), left(user(),instr(concat(user(),'@'),'@')-1), @@version_comment
+2019-07-23T04:13:17.352720Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:17.353751Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select @@default_storage_engine, @@default_tmp_storage_engine
+2019-07-23T04:13:17.362667Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:17.370781Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET autocommit=0
+2019-07-23T04:13:17.371389Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ commit
+2019-07-23T04:13:17.372753Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ rollback
+2019-07-23T04:13:17.372954Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET autocommit=1
+2019-07-23T04:13:17.378821Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:17.380172Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select @@default_storage_engine, @@default_tmp_storage_engine
+2019-07-23T04:13:17.386208Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:17.388785Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET autocommit=0
+2019-07-23T04:13:17.391996Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:17.392969Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select @@GLOBAL.lower_case_table_names
+2019-07-23T04:13:17.401590Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:17.402943Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select schema_name, default_collation_name
+from information_schema.schemata
+order by if(schema() = schema_name, 1, 2), schema_name
+2019-07-23T04:13:17.410843Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ commit
+2019-07-23T04:13:17.411956Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:17.413631Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:17.414802Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ rollback
+2019-07-23T04:13:17.415010Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET autocommit=1
+2019-07-23T04:13:17.417266Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET autocommit=0
+2019-07-23T04:13:17.421636Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:17.422954Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select
+  collation_name,
+  character_set_name,
+  is_default collate utf8_general_ci /* is_default */ = 'Yes' as is_default
+from information_schema.collations
+2019-07-23T04:13:17.438459Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ commit
+2019-07-23T04:13:17.439824Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:17.441171Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ rollback
+2019-07-23T04:13:17.441438Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET autocommit=1
+2019-07-23T04:13:17.449544Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:17.450556Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select @@default_storage_engine, @@default_tmp_storage_engine
+2019-07-23T04:13:17.456053Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:17.458998Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET autocommit=0
+2019-07-23T04:13:17.462642Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:17.464135Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select @@GLOBAL.lower_case_table_names
+2019-07-23T04:13:17.473858Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:17.474837Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select schema_name, default_collation_name
+from information_schema.schemata
+order by if(schema() = schema_name, 1, 2), schema_name
+2019-07-23T04:13:17.604795Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:17.608891Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select table_name, table_type, table_comment, engine, table_collation
+from information_schema.tables
+where table_schema = 'zipdev'
+2019-07-23T04:13:17.629106Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:17.631867Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET net_write_timeout=600
+2019-07-23T04:13:17.632177Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select
+  ordinal_position,
+  column_name,
+  column_type,
+  column_default,
+/* null */
+  generation_expression,
+  table_name,
+  column_comment,
+  is_nullable,
+  extra,
+  collation_name
+from information_schema.columns
+where table_schema = 'zipdev'
+order by table_name, ordinal_position
+2019-07-23T04:13:17.639835Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET net_write_timeout=60
+2019-07-23T04:13:17.648587Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:17.649957Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select
+  table_name,
+  index_name,
+  /* null */ index_comment,
+  index_type,
+  group_concat(replace(replace(column_name, '\\', '\\\\'), '\n', '\\n') order by seq_in_index separator '\n' ) as column_names,
+  non_unique
+/* from (select * */
+from information_schema.statistics
+where table_schema = 'zipdev' and
+      index_schema = 'zipdev' and
+      index_name collate utf8_general_ci /* index_name */ <> 'PRIMARY'
+/* order by table_catalog, table_schema, table_name, index_name, index_type, non_unique, seq_in_index) s */
+group by
+  table_catalog,
+  table_schema,
+  table_name,
+  index_name,
+  index_comment,
+  index_type,
+  non_unique
+2019-07-23T04:13:17.670200Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:17.671995Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select
+  c.constraint_name,
+  c.table_name,
+  c.constraint_type,
+  group_concat(replace(replace(u.column_name, '\\', '\\\\'), '\n', '\\n') order by u.ordinal_position separator '\n' ) as column_names,
+  u.referenced_table_schema,
+  u.referenced_table_name,
+  group_concat(replace(replace(u.referenced_column_name, '\\', '\\\\'), '\n', '\\n') order by u.position_in_unique_constraint separator '\n') as ref_column_names,
+  r.match_option,
+  r.update_rule,
+  r.delete_rule
+from information_schema.table_constraints c
+  left join information_schema.key_column_usage u on
+      u.constraint_schema   = c.constraint_schema
+  and u.constraint_name     = c.constraint_name
+  and u.table_name = c.table_name
+  and u.table_schema = 'zipdev'
+  and if (c.constraint_type collate utf8_general_ci /* c.constraint_type */ = 'UNIQUE', u.referenced_table_name is null, true)
+  left join information_schema.referential_constraints r on
+      r.constraint_schema   = c.constraint_schema
+  and r.constraint_name     = c.constraint_name
+where c.table_schema = 'zipdev'
+  and u.table_schema = 'zipdev'
+group by
+    c.constraint_schema
+  , c.constraint_name
+  , c.table_schema
+  , c.table_name
+  , c.constraint_type
+  , u.referenced_table_schema
+  , u.referenced_table_name
+  , r.match_option
+  , r.update_rule
+  , r.delete_rule
+order by
+    c.table_schema
+  , c.table_name
+  , c.constraint_schema
+  , c.constraint_name
+2019-07-23T04:13:17.782214Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:17.783772Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select
+  trigger_name,
+  event_object_table,
+  event_manipulation,
+  action_timing
+from information_schema.triggers
+where trigger_schema = 'zipdev'
+2019-07-23T04:13:17.828864Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:17.832657Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select
+  event_name,
+  event_comment,
+  definer,
+  event_type = 'RECURRING' recurring,
+  interval_value,
+  interval_field,
+  cast(coalesce(starts, execute_at) as char) starts,
+  cast(ends as char) ends,
+  status,
+  on_completion = 'PRESERVE' preserve,
+  last_executed
+from information_schema.events
+where event_schema = 'zipdev'
+2019-07-23T04:13:17.850271Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:17.852425Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select
+  specific_name,
+  routine_type,
+  routine_definition,
+  routine_comment,
+  dtd_identifier
+from information_schema.routines
+where routine_schema = 'zipdev'
+2019-07-23T04:13:17.870450Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:17.872094Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select table_name from information_schema.tables
+where table_schema collate utf8_general_ci /* lower(table_schema) */ = 'information_schema'
+  and table_name collate utf8_general_ci /* lower(table_name) */ = 'parameters'
+2019-07-23T04:13:17.893238Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:17.894759Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET net_write_timeout=600
+2019-07-23T04:13:17.895106Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select specific_name,
+  ordinal_position,
+  parameter_name,
+  parameter_mode,
+  dtd_identifier
+from information_schema.parameters
+where specific_schema = 'zipdev' and ordinal_position > 0
+order by specific_name, ordinal_position
+2019-07-23T04:13:17.899443Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET net_write_timeout=60
+2019-07-23T04:13:17.908790Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:17.910692Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET net_write_timeout=600
+2019-07-23T04:13:17.910968Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select table_name, view_definition
+from information_schema.views
+where table_schema = 'zipdev'
+2019-07-23T04:13:17.912197Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET net_write_timeout=60
+2019-07-23T04:13:17.923175Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:17.924725Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET net_write_timeout=600
+2019-07-23T04:13:17.925091Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select specific_name, routine_definition
+from information_schema.routines
+where routine_schema = 'zipdev'
+2019-07-23T04:13:17.933026Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET net_write_timeout=60
+2019-07-23T04:13:17.945466Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:17.948274Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET net_write_timeout=600
+2019-07-23T04:13:17.948817Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select
+  trigger_name,
+  event_object_table,
+  action_statement
+from information_schema.triggers
+where trigger_schema = 'zipdev'
+2019-07-23T04:13:17.970639Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET net_write_timeout=60
+2019-07-23T04:13:17.983357Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:17.984766Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET net_write_timeout=600
+2019-07-23T04:13:17.984983Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select
+  event_name,
+  event_definition
+from information_schema.events
+where event_schema = 'zipdev'
+2019-07-23T04:13:17.985859Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET net_write_timeout=60
+2019-07-23T04:13:17.993205Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ commit
+2019-07-23T04:13:17.994045Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:17.997578Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:17.999527Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:18.001347Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:18.003551Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:18.005249Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:18.007774Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:18.010066Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:18.011703Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:18.014025Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:18.015402Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:18.017553Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:18.019512Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:18.021555Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:18.022791Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:18.023594Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ rollback
+2019-07-23T04:13:18.023801Z	   18 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET autocommit=1
+2019-07-23T04:13:18.037105Z	   18 Quit	
+2019-07-23T04:13:19.021067Z	   16 Query	/* ApplicationName=PhpStorm 2018.2.2 */ set session transaction read write
+2019-07-23T04:13:19.022088Z	   16 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select @@session.transaction_read_only
+2019-07-23T04:13:19.024265Z	   16 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:19.027223Z	   16 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select @@session.transaction_read_only
+2019-07-23T04:13:19.027667Z	   16 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET net_write_timeout=600
+2019-07-23T04:13:19.027962Z	   16 Query	/* ApplicationName=PhpStorm 2018.2.2 */ create table emails (
+  id INT UNSIGNED NOT NULL auto_increment,
+  email VARCHAR(20) NOT NULL ,
+  phone_books_id INT UNSIGNED NOT NULL ,
+  PRIMARY KEY (id),
+  FOREIGN KEY (phone_books_id) REFERENCES  phone_books (id)
+    ON DELETE CASCADE
+) ENGINE=INNODB
+2019-07-23T04:13:19.073592Z	   16 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:19.077319Z	   16 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:19.078435Z	   16 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select database()
+2019-07-23T04:13:19.085312Z	   16 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:19.089654Z	   16 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SELECT @@session.transaction_isolation
+2019-07-23T04:13:19.101001Z	   19 Connect	root@localhost on zipdev using TCP/IP
+2019-07-23T04:13:19.101505Z	   19 Query	/* mysql-connector-java-5.1.47 ( Revision: fe1903b1ecb4a96a917f7ed3190d80c049b1de29 ) */SELECT  @@session.auto_increment_increment AS auto_increment_increment, @@character_set_client AS character_set_client, @@character_set_connection AS character_set_connection, @@character_set_results AS character_set_results, @@character_set_server AS character_set_server, @@collation_server AS collation_server, @@collation_connection AS collation_connection, @@init_connect AS init_connect, @@interactive_timeout AS interactive_timeout, @@license AS license, @@lower_case_table_names AS lower_case_table_names, @@max_allowed_packet AS max_allowed_packet, @@net_buffer_length AS net_buffer_length, @@net_write_timeout AS net_write_timeout, @@query_cache_size AS query_cache_size, @@query_cache_type AS query_cache_type, @@sql_mode AS sql_mode, @@system_time_zone AS system_time_zone, @@time_zone AS time_zone, @@transaction_isolation AS transaction_isolation, @@wait_timeout AS wait_timeout
+2019-07-23T04:13:19.102047Z	   19 Query	SET NAMES utf8mb4
+2019-07-23T04:13:19.102269Z	   19 Query	SET autocommit=1
+2019-07-23T04:13:19.102426Z	   19 Query	SET sql_mode='STRICT_ALL_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,STRICT_TRANS_TABLES'
+2019-07-23T04:13:19.110039Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET autocommit=1
+2019-07-23T04:13:19.110607Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select database(), schema(), left(user(),instr(concat(user(),'@'),'@')-1), @@version_comment
+2019-07-23T04:13:19.125537Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET autocommit=1
+2019-07-23T04:13:19.126108Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select database(), schema(), left(user(),instr(concat(user(),'@'),'@')-1), @@version_comment
+2019-07-23T04:13:19.130553Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:19.131452Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select @@default_storage_engine, @@default_tmp_storage_engine
+2019-07-23T04:13:19.136355Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:19.138641Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET autocommit=0
+2019-07-23T04:13:19.138998Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ commit
+2019-07-23T04:13:19.139234Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ rollback
+2019-07-23T04:13:19.139355Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET autocommit=1
+2019-07-23T04:13:19.142934Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:19.143807Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select @@default_storage_engine, @@default_tmp_storage_engine
+2019-07-23T04:13:19.147556Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:19.149745Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET autocommit=0
+2019-07-23T04:13:19.152195Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:19.153069Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select @@GLOBAL.lower_case_table_names
+2019-07-23T04:13:19.158887Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:19.159729Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select schema_name, default_collation_name
+from information_schema.schemata
+order by if(schema() = schema_name, 1, 2), schema_name
+2019-07-23T04:13:19.164203Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ commit
+2019-07-23T04:13:19.164761Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:19.165916Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:19.166556Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ rollback
+2019-07-23T04:13:19.166725Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET autocommit=1
+2019-07-23T04:13:19.168125Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET autocommit=0
+2019-07-23T04:13:19.170142Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:19.170945Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select
+  collation_name,
+  character_set_name,
+  is_default collate utf8_general_ci /* is_default */ = 'Yes' as is_default
+from information_schema.collations
+2019-07-23T04:13:19.179708Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ commit
+2019-07-23T04:13:19.180529Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:19.181319Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ rollback
+2019-07-23T04:13:19.181530Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET autocommit=1
+2019-07-23T04:13:19.185533Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:19.186359Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select @@default_storage_engine, @@default_tmp_storage_engine
+2019-07-23T04:13:19.190375Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:19.192620Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET autocommit=0
+2019-07-23T04:13:19.195122Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:19.195810Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select @@GLOBAL.lower_case_table_names
+2019-07-23T04:13:19.201177Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:19.202101Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select schema_name, default_collation_name
+from information_schema.schemata
+order by if(schema() = schema_name, 1, 2), schema_name
+2019-07-23T04:13:19.208564Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:19.209719Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select table_name, table_type, table_comment, engine, table_collation
+from information_schema.tables
+where table_schema = 'zipdev'
+2019-07-23T04:13:19.216835Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:19.217962Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET net_write_timeout=600
+2019-07-23T04:13:19.218245Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select
+  ordinal_position,
+  column_name,
+  column_type,
+  column_default,
+/* null */
+  generation_expression,
+  table_name,
+  column_comment,
+  is_nullable,
+  extra,
+  collation_name
+from information_schema.columns
+where table_schema = 'zipdev'
+order by table_name, ordinal_position
+2019-07-23T04:13:19.223872Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET net_write_timeout=60
+2019-07-23T04:13:19.229189Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:19.230581Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select
+  table_name,
+  index_name,
+  /* null */ index_comment,
+  index_type,
+  group_concat(replace(replace(column_name, '\\', '\\\\'), '\n', '\\n') order by seq_in_index separator '\n' ) as column_names,
+  non_unique
+/* from (select * */
+from information_schema.statistics
+where table_schema = 'zipdev' and
+      index_schema = 'zipdev' and
+      index_name collate utf8_general_ci /* index_name */ <> 'PRIMARY'
+/* order by table_catalog, table_schema, table_name, index_name, index_type, non_unique, seq_in_index) s */
+group by
+  table_catalog,
+  table_schema,
+  table_name,
+  index_name,
+  index_comment,
+  index_type,
+  non_unique
+2019-07-23T04:13:19.244238Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:19.245514Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select
+  c.constraint_name,
+  c.table_name,
+  c.constraint_type,
+  group_concat(replace(replace(u.column_name, '\\', '\\\\'), '\n', '\\n') order by u.ordinal_position separator '\n' ) as column_names,
+  u.referenced_table_schema,
+  u.referenced_table_name,
+  group_concat(replace(replace(u.referenced_column_name, '\\', '\\\\'), '\n', '\\n') order by u.position_in_unique_constraint separator '\n') as ref_column_names,
+  r.match_option,
+  r.update_rule,
+  r.delete_rule
+from information_schema.table_constraints c
+  left join information_schema.key_column_usage u on
+      u.constraint_schema   = c.constraint_schema
+  and u.constraint_name     = c.constraint_name
+  and u.table_name = c.table_name
+  and u.table_schema = 'zipdev'
+  and if (c.constraint_type collate utf8_general_ci /* c.constraint_type */ = 'UNIQUE', u.referenced_table_name is null, true)
+  left join information_schema.referential_constraints r on
+      r.constraint_schema   = c.constraint_schema
+  and r.constraint_name     = c.constraint_name
+where c.table_schema = 'zipdev'
+  and u.table_schema = 'zipdev'
+group by
+    c.constraint_schema
+  , c.constraint_name
+  , c.table_schema
+  , c.table_name
+  , c.constraint_type
+  , u.referenced_table_schema
+  , u.referenced_table_name
+  , r.match_option
+  , r.update_rule
+  , r.delete_rule
+order by
+    c.table_schema
+  , c.table_name
+  , c.constraint_schema
+  , c.constraint_name
+2019-07-23T04:13:19.315718Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:19.316764Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select
+  trigger_name,
+  event_object_table,
+  event_manipulation,
+  action_timing
+from information_schema.triggers
+where trigger_schema = 'zipdev'
+2019-07-23T04:13:19.341763Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:19.342908Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select
+  event_name,
+  event_comment,
+  definer,
+  event_type = 'RECURRING' recurring,
+  interval_value,
+  interval_field,
+  cast(coalesce(starts, execute_at) as char) starts,
+  cast(ends as char) ends,
+  status,
+  on_completion = 'PRESERVE' preserve,
+  last_executed
+from information_schema.events
+where event_schema = 'zipdev'
+2019-07-23T04:13:19.350735Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:19.352033Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select
+  specific_name,
+  routine_type,
+  routine_definition,
+  routine_comment,
+  dtd_identifier
+from information_schema.routines
+where routine_schema = 'zipdev'
+2019-07-23T04:13:19.361840Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:19.362582Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select table_name from information_schema.tables
+where table_schema collate utf8_general_ci /* lower(table_schema) */ = 'information_schema'
+  and table_name collate utf8_general_ci /* lower(table_name) */ = 'parameters'
+2019-07-23T04:13:19.377897Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:19.379324Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET net_write_timeout=600
+2019-07-23T04:13:19.379887Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select specific_name,
+  ordinal_position,
+  parameter_name,
+  parameter_mode,
+  dtd_identifier
+from information_schema.parameters
+where specific_schema = 'zipdev' and ordinal_position > 0
+order by specific_name, ordinal_position
+2019-07-23T04:13:19.383740Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET net_write_timeout=60
+2019-07-23T04:13:19.391986Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:19.393239Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET net_write_timeout=600
+2019-07-23T04:13:19.393451Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select table_name, view_definition
+from information_schema.views
+where table_schema = 'zipdev'
+2019-07-23T04:13:19.394635Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET net_write_timeout=60
+2019-07-23T04:13:19.401212Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:19.402720Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET net_write_timeout=600
+2019-07-23T04:13:19.402975Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select specific_name, routine_definition
+from information_schema.routines
+where routine_schema = 'zipdev'
+2019-07-23T04:13:19.408429Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET net_write_timeout=60
+2019-07-23T04:13:19.415815Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:19.417109Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET net_write_timeout=600
+2019-07-23T04:13:19.417402Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select
+  trigger_name,
+  event_object_table,
+  action_statement
+from information_schema.triggers
+where trigger_schema = 'zipdev'
+2019-07-23T04:13:19.440498Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET net_write_timeout=60
+2019-07-23T04:13:19.448247Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:19.449762Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET net_write_timeout=600
+2019-07-23T04:13:19.450045Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select
+  event_name,
+  event_definition
+from information_schema.events
+where event_schema = 'zipdev'
+2019-07-23T04:13:19.451147Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET net_write_timeout=60
+2019-07-23T04:13:19.456704Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ commit
+2019-07-23T04:13:19.457343Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:19.458379Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:19.459247Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:19.460255Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:19.461273Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:19.462551Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:19.463692Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:19.464859Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:19.465905Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:19.467055Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:19.468082Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:19.469193Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:19.470071Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:19.470953Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:19.471939Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:13:19.472679Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ rollback
+2019-07-23T04:13:19.472909Z	   19 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET autocommit=1
+2019-07-23T04:13:19.486695Z	   19 Quit	
+2019-07-23T04:18:20.223440Z	   20 Connect	root@localhost on zipdev using TCP/IP
+2019-07-23T04:18:20.223774Z	   20 Query	START TRANSACTION
+2019-07-23T04:18:20.233605Z	   20 Prepare	INSERT INTO phone_books (first_name, sur_name, image) values (?, ?, ?)
+2019-07-23T04:18:20.233725Z	   20 Execute	INSERT INTO phone_books (first_name, sur_name, image) values ('gfdhfhgfd', 'wrewre', NULL)
+2019-07-23T04:18:20.234021Z	   20 Close stmt	
+2019-07-23T04:18:20.235337Z	   20 Prepare	INSERT INTO phones (phone, phone_books_id) values (?, ?)
+2019-07-23T04:18:20.235409Z	   20 Execute	INSERT INTO phones (phone, phone_books_id) values ('6516514651', '1')
+2019-07-23T04:18:20.235546Z	   20 Close stmt	
+2019-07-23T04:18:20.235636Z	   20 Prepare	INSERT INTO phones (phone, phone_books_id) values (?, ?)
+2019-07-23T04:18:20.235678Z	   20 Execute	INSERT INTO phones (phone, phone_books_id) values ('123123123', '1')
+2019-07-23T04:18:20.235799Z	   20 Close stmt	
+2019-07-23T04:18:20.237832Z	   20 Prepare	INSERT INTO emails (email, phone_books_id) values (?, ?)
+2019-07-23T04:18:20.237911Z	   20 Execute	INSERT INTO emails (email, phone_books_id) values ('test@test.com', '1')
+2019-07-23T04:18:20.238055Z	   20 Close stmt	
+2019-07-23T04:18:20.238164Z	   20 Prepare	INSERT INTO emails (email, phone_books_id) values (?, ?)
+2019-07-23T04:18:20.238228Z	   20 Execute	INSERT INTO emails (email, phone_books_id) values ('fer@fer.com', '1')
+2019-07-23T04:18:20.238427Z	   20 Close stmt	
+2019-07-23T04:18:20.238471Z	   20 Query	COMMIT
+2019-07-23T04:18:20.238983Z	   20 Quit	
+2019-07-23T04:18:54.069642Z	   21 Connect	root@localhost on zipdev using TCP/IP
+2019-07-23T04:18:54.070499Z	   21 Query	START TRANSACTION
+2019-07-23T04:18:54.073441Z	   21 Prepare	INSERT INTO phone_books (first_name, sur_name, image) values (?, ?, ?)
+2019-07-23T04:18:54.073555Z	   21 Execute	INSERT INTO phone_books (first_name, sur_name, image) values ('gfdhfhgfd', 'wrewre', NULL)
+2019-07-23T04:18:54.073867Z	   21 Close stmt	
+2019-07-23T04:18:54.075655Z	   21 Prepare	INSERT INTO phones (phone, phone_books_id) values (?, ?)
+2019-07-23T04:18:54.075729Z	   21 Execute	INSERT INTO phones (phone, phone_books_id) values ('6516514651', '2')
+2019-07-23T04:18:54.075956Z	   21 Close stmt	
+2019-07-23T04:18:54.076117Z	   21 Prepare	INSERT INTO phones (phone, phone_books_id) values (?, ?)
+2019-07-23T04:18:54.076203Z	   21 Execute	INSERT INTO phones (phone, phone_books_id) values ('123123123', '2')
+2019-07-23T04:18:54.076365Z	   21 Close stmt	
+2019-07-23T04:18:54.078536Z	   21 Prepare	INSERT INTO emails (email, phone_books_id) values (?, ?)
+2019-07-23T04:18:54.078625Z	   21 Execute	INSERT INTO emails (email, phone_books_id) values ('test@test.com', '2')
+2019-07-23T04:18:54.078831Z	   21 Close stmt	
+2019-07-23T04:18:54.078975Z	   21 Prepare	INSERT INTO emails (email, phone_books_id) values (?, ?)
+2019-07-23T04:18:54.079075Z	   21 Execute	INSERT INTO emails (email, phone_books_id) values ('fer@fer.com', '2')
+2019-07-23T04:18:54.079352Z	   21 Close stmt	
+2019-07-23T04:18:54.079400Z	   21 Query	COMMIT
+2019-07-23T04:18:54.079944Z	   21 Quit	
+2019-07-23T04:19:01.269295Z	   22 Connect	root@localhost on zipdev using TCP/IP
+2019-07-23T04:19:01.269900Z	   22 Query	/* mysql-connector-java-5.1.47 ( Revision: fe1903b1ecb4a96a917f7ed3190d80c049b1de29 ) */SELECT  @@session.auto_increment_increment AS auto_increment_increment, @@character_set_client AS character_set_client, @@character_set_connection AS character_set_connection, @@character_set_results AS character_set_results, @@character_set_server AS character_set_server, @@collation_server AS collation_server, @@collation_connection AS collation_connection, @@init_connect AS init_connect, @@interactive_timeout AS interactive_timeout, @@license AS license, @@lower_case_table_names AS lower_case_table_names, @@max_allowed_packet AS max_allowed_packet, @@net_buffer_length AS net_buffer_length, @@net_write_timeout AS net_write_timeout, @@query_cache_size AS query_cache_size, @@query_cache_type AS query_cache_type, @@sql_mode AS sql_mode, @@system_time_zone AS system_time_zone, @@time_zone AS time_zone, @@transaction_isolation AS transaction_isolation, @@wait_timeout AS wait_timeout
+2019-07-23T04:19:01.270390Z	   22 Query	SET NAMES utf8mb4
+2019-07-23T04:19:01.270613Z	   22 Query	SET autocommit=1
+2019-07-23T04:19:01.270880Z	   22 Query	SET sql_mode='STRICT_ALL_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,STRICT_TRANS_TABLES'
+2019-07-23T04:19:01.289451Z	   22 Query	/* ApplicationName=PhpStorm 2018.2.2 */ set session transaction read write
+2019-07-23T04:19:01.291306Z	   22 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:19:01.292289Z	   22 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select @@session.transaction_read_only
+2019-07-23T04:19:01.292522Z	   22 Query	/* ApplicationName=PhpStorm 2018.2.2 */ use zipdev
+2019-07-23T04:19:01.293161Z	   22 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:19:01.294731Z	   22 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select @@session.transaction_read_only
+2019-07-23T04:19:01.312815Z	   22 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:19:01.313892Z	   22 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select database()
+2019-07-23T04:19:01.319542Z	   22 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:19:01.322969Z	   22 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:19:01.324543Z	   22 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET net_write_timeout=600
+2019-07-23T04:19:01.324846Z	   22 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET SQL_SELECT_LIMIT=502
+2019-07-23T04:19:01.325063Z	   22 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SELECT t.* FROM zipdev.phone_books t
+LIMIT 501
+2019-07-23T04:19:01.399837Z	   22 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET net_write_timeout=60
+2019-07-23T04:19:01.400871Z	   22 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET SQL_SELECT_LIMIT=DEFAULT
+2019-07-23T04:19:01.401142Z	   22 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:19:01.404912Z	   22 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SELECT @@session.transaction_isolation
+2019-07-23T04:21:17.441931Z	   23 Connect	root@localhost on zipdev using TCP/IP
+2019-07-23T04:21:17.442230Z	   23 Query	START TRANSACTION
+2019-07-23T04:21:17.445053Z	   23 Query	ROLLBACK
+2019-07-23T04:21:17.445134Z	   23 Quit	
+2019-07-23T04:21:42.905611Z	   24 Connect	root@localhost on zipdev using TCP/IP
+2019-07-23T04:21:42.905919Z	   24 Query	START TRANSACTION
+2019-07-23T04:21:42.906575Z	   24 Query	ROLLBACK
+2019-07-23T04:21:42.906654Z	   24 Quit	
+2019-07-23T04:22:30.909567Z	   25 Connect	root@localhost on zipdev using TCP/IP
+2019-07-23T04:22:30.909869Z	   25 Query	START TRANSACTION
+2019-07-23T04:22:30.912755Z	   25 Prepare	INSERT INTO phone_books (first_name, sur_name, image) values (?, ?, ?)
+2019-07-23T04:22:30.912866Z	   25 Execute	INSERT INTO phone_books (first_name, sur_name, image) values ('gfdhfhgfd', 'wrewre', 'gordito.jpg')
+2019-07-23T04:22:30.913179Z	   25 Close stmt	
+2019-07-23T04:22:30.914606Z	   25 Prepare	INSERT INTO phones (phone, phone_books_id) values (?, ?)
+2019-07-23T04:22:30.914700Z	   25 Execute	INSERT INTO phones (phone, phone_books_id) values ('6516514651', '3')
+2019-07-23T04:22:30.914969Z	   25 Close stmt	
+2019-07-23T04:22:30.915106Z	   25 Prepare	INSERT INTO phones (phone, phone_books_id) values (?, ?)
+2019-07-23T04:22:30.915171Z	   25 Execute	INSERT INTO phones (phone, phone_books_id) values ('123123123', '3')
+2019-07-23T04:22:30.915331Z	   25 Close stmt	
+2019-07-23T04:22:30.917672Z	   25 Prepare	INSERT INTO emails (email, phone_books_id) values (?, ?)
+2019-07-23T04:22:30.917744Z	   25 Execute	INSERT INTO emails (email, phone_books_id) values ('test@test.com', '3')
+2019-07-23T04:22:30.917936Z	   25 Close stmt	
+2019-07-23T04:22:30.918061Z	   25 Prepare	INSERT INTO emails (email, phone_books_id) values (?, ?)
+2019-07-23T04:22:30.918112Z	   25 Execute	INSERT INTO emails (email, phone_books_id) values ('fer@fer.com', '3')
+2019-07-23T04:22:30.918274Z	   25 Close stmt	
+2019-07-23T04:22:30.918317Z	   25 Query	COMMIT
+2019-07-23T04:22:30.918629Z	   25 Quit	
+2019-07-23T04:22:34.348224Z	   22 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SELECT @@session.transaction_isolation
+2019-07-23T04:22:34.348713Z	   22 Query	/* ApplicationName=PhpStorm 2018.2.2 */ set session transaction read write
+2019-07-23T04:22:34.350053Z	   22 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select @@session.transaction_read_only
+2019-07-23T04:22:34.364669Z	   22 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:22:34.367114Z	   22 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select database()
+2019-07-23T04:22:34.371928Z	   22 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:22:34.375187Z	   22 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:22:34.376298Z	   22 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET net_write_timeout=600
+2019-07-23T04:22:34.376489Z	   22 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET SQL_SELECT_LIMIT=502
+2019-07-23T04:22:34.376615Z	   22 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SELECT t.* FROM zipdev.phone_books t
+LIMIT 501
+2019-07-23T04:22:34.393446Z	   22 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET net_write_timeout=60
+2019-07-23T04:22:34.395139Z	   22 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET SQL_SELECT_LIMIT=DEFAULT
+2019-07-23T04:22:34.395282Z	   22 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:22:34.398514Z	   22 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SELECT @@session.transaction_isolation
+2019-07-23T04:22:36.124464Z	   22 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SELECT @@session.transaction_isolation
+2019-07-23T04:22:36.124915Z	   22 Query	/* ApplicationName=PhpStorm 2018.2.2 */ set session transaction read write
+2019-07-23T04:22:36.125611Z	   22 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select @@session.transaction_read_only
+2019-07-23T04:22:36.135825Z	   22 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:22:36.137082Z	   22 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select database()
+2019-07-23T04:22:36.142498Z	   22 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:22:36.145790Z	   22 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:22:36.147043Z	   22 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET net_write_timeout=600
+2019-07-23T04:22:36.147192Z	   22 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET SQL_SELECT_LIMIT=502
+2019-07-23T04:22:36.147308Z	   22 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SELECT t.* FROM zipdev.phone_books t
+LIMIT 501
+2019-07-23T04:22:36.155208Z	   22 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET net_write_timeout=60
+2019-07-23T04:22:36.155819Z	   22 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET SQL_SELECT_LIMIT=DEFAULT
+2019-07-23T04:22:36.155969Z	   22 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T04:22:36.158347Z	   22 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SELECT @@session.transaction_isolation
+2019-07-23T04:22:39.850189Z	   26 Connect	root@localhost on zipdev using TCP/IP
+2019-07-23T04:22:39.851920Z	   26 Prepare	INSERT INTO phone_books (first_name, sur_name, image) values (?, ?, ?)
+2019-07-23T04:22:39.852087Z	   26 Execute	INSERT INTO phone_books (first_name, sur_name, image) values ('fernando', 'leon', NULL)
+2019-07-23T04:22:39.852465Z	   26 Close stmt	
+2019-07-23T04:22:39.854648Z	   26 Prepare	INSERT INTO phones (phone, phone_books_id) values (?, ?)
+2019-07-23T04:22:39.854776Z	   26 Execute	INSERT INTO phones (phone, phone_books_id) values ('2000000', '4')
+2019-07-23T04:22:39.855012Z	   26 Close stmt	
+2019-07-23T04:22:39.855753Z	   26 Prepare	INSERT INTO phones (phone, phone_books_id) values (?, ?)
+2019-07-23T04:22:39.855818Z	   26 Execute	INSERT INTO phones (phone, phone_books_id) values ('29012901902', '4')
+2019-07-23T04:22:39.856131Z	   26 Close stmt	
+2019-07-23T04:22:39.856272Z	   26 Prepare	INSERT INTO phones (phone, phone_books_id) values (?, ?)
+2019-07-23T04:22:39.856331Z	   26 Execute	INSERT INTO phones (phone, phone_books_id) values ('1029321903', '4')
+2019-07-23T04:22:39.856479Z	   26 Close stmt	
+2019-07-23T04:22:39.857886Z	   26 Prepare	INSERT INTO emails (email, phone_books_id) values (?, ?)
+2019-07-23T04:22:39.857980Z	   26 Execute	INSERT INTO emails (email, phone_books_id) values ('welkfwe@weldmpsf.com', '4')
+2019-07-23T04:22:39.858235Z	   26 Close stmt	
+2019-07-23T04:22:39.858336Z	   26 Prepare	INSERT INTO emails (email, phone_books_id) values (?, ?)
+2019-07-23T04:22:39.858452Z	   26 Execute	INSERT INTO emails (email, phone_books_id) values ('lksmd@qwdsqa.net', '4')
+2019-07-23T04:22:39.858627Z	   26 Close stmt	
+2019-07-23T04:22:39.858869Z	   26 Quit	
+2019-07-23T04:23:42.567684Z	   27 Connect	root@localhost on zipdev using TCP/IP
+2019-07-23T04:23:42.567954Z	   27 Query	START TRANSACTION
+2019-07-23T04:23:42.571242Z	   27 Prepare	INSERT INTO phone_books (first_name, sur_name, image) values (?, ?, ?)
+2019-07-23T04:23:42.571358Z	   27 Execute	INSERT INTO phone_books (first_name, sur_name, image) values ('gfdhfhgfd', 'wrewre', 'gordito.jpg')
+2019-07-23T04:23:42.571870Z	   27 Close stmt	
+2019-07-23T04:23:42.573275Z	   27 Prepare	INSERT INTO phones (phone, phone_books_id) values (?, ?)
+2019-07-23T04:23:42.573363Z	   27 Execute	INSERT INTO phones (phone, phone_books_id) values ('6516514651', '5')
+2019-07-23T04:23:42.573570Z	   27 Close stmt	
+2019-07-23T04:23:42.573707Z	   27 Prepare	INSERT INTO phones (phone, phone_books_id) values (?, ?)
+2019-07-23T04:23:42.573775Z	   27 Execute	INSERT INTO phones (phone, phone_books_id) values ('123123123', '5')
+2019-07-23T04:23:42.573895Z	   27 Close stmt	
+2019-07-23T04:23:42.575272Z	   27 Prepare	INSERT INTO emails (email, phone_books_id) values (?, ?)
+2019-07-23T04:23:42.575433Z	   27 Execute	INSERT INTO emails (email, phone_books_id) values ('test@test.com', '5')
+2019-07-23T04:23:42.575640Z	   27 Close stmt	
+2019-07-23T04:23:42.575741Z	   27 Prepare	INSERT INTO emails (email, phone_books_id) values (?, ?)
+2019-07-23T04:23:42.575787Z	   27 Execute	INSERT INTO emails (email, phone_books_id) values ('fer@fer.com', '5')
+2019-07-23T04:23:42.575894Z	   27 Close stmt	
+2019-07-23T04:23:42.575922Z	   27 Query	COMMIT
+2019-07-23T04:23:42.576340Z	   27 Quit	
+2019-07-23T04:25:37.532761Z	   28 Connect	root@localhost on zipdev using TCP/IP
+2019-07-23T04:25:37.535117Z	   28 Prepare	select * from phone_books
+2019-07-23T04:25:37.535204Z	   28 Execute	select * from phone_books
+2019-07-23T04:25:37.537127Z	   28 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T04:25:37.537249Z	   28 Execute	select * from phones where phone_books_id = '1'
+2019-07-23T04:25:37.539588Z	   28 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T04:25:37.539715Z	   28 Execute	select * from emails where phone_books_id = '1'
+2019-07-23T04:25:37.540188Z	   28 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T04:25:37.540265Z	   28 Execute	select * from phones where phone_books_id = '2'
+2019-07-23T04:25:37.540499Z	   28 Close stmt	
+2019-07-23T04:25:37.540667Z	   28 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T04:25:37.540748Z	   28 Execute	select * from emails where phone_books_id = '2'
+2019-07-23T04:25:37.541073Z	   28 Close stmt	
+2019-07-23T04:25:37.541300Z	   28 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T04:25:37.541453Z	   28 Execute	select * from phones where phone_books_id = '3'
+2019-07-23T04:25:37.541863Z	   28 Close stmt	
+2019-07-23T04:25:37.542011Z	   28 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T04:25:37.542125Z	   28 Execute	select * from emails where phone_books_id = '3'
+2019-07-23T04:25:37.542375Z	   28 Close stmt	
+2019-07-23T04:25:37.542529Z	   28 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T04:25:37.542650Z	   28 Execute	select * from phones where phone_books_id = '4'
+2019-07-23T04:25:37.542941Z	   28 Close stmt	
+2019-07-23T04:25:37.543078Z	   28 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T04:25:37.543151Z	   28 Execute	select * from emails where phone_books_id = '4'
+2019-07-23T04:25:37.543394Z	   28 Close stmt	
+2019-07-23T04:25:37.543544Z	   28 Prepare	select * from phones where phone_books_id = ?
+2019-07-23T04:25:37.543652Z	   28 Execute	select * from phones where phone_books_id = '5'
+2019-07-23T04:25:37.543974Z	   28 Close stmt	
+2019-07-23T04:25:37.544149Z	   28 Prepare	select * from emails where phone_books_id = ?
+2019-07-23T04:25:37.544226Z	   28 Execute	select * from emails where phone_books_id = '5'
+2019-07-23T04:25:37.544502Z	   28 Close stmt	
+2019-07-23T04:25:37.544954Z	   28 Close stmt	
+2019-07-23T04:25:37.544995Z	   28 Close stmt	
+2019-07-23T04:25:37.545022Z	   28 Close stmt	
+2019-07-23T04:25:37.545075Z	   28 Quit	
+2019-07-23T06:12:08.859803Z	   29 Connect	root@localhost on zipdev using TCP/IP
+2019-07-23T06:12:08.864328Z	   29 Prepare	delete from phone_books where id = ?
+2019-07-23T06:12:08.864455Z	   29 Execute	delete from phone_books where id = '4'
+2019-07-23T06:12:08.868791Z	   29 Close stmt	
+2019-07-23T06:12:08.869337Z	   29 Quit	
+2019-07-23T06:12:11.972680Z	   30 Connect	root@localhost on zipdev using TCP/IP
+2019-07-23T06:12:11.974732Z	   30 Prepare	delete from phone_books where id = ?
+2019-07-23T06:12:11.974820Z	   30 Execute	delete from phone_books where id = '4'
+2019-07-23T06:12:11.975119Z	   30 Close stmt	
+2019-07-23T06:12:11.975270Z	   30 Quit	
+2019-07-23T06:12:30.410678Z	   31 Connect	root@localhost on zipdev using TCP/IP
+2019-07-23T06:12:30.414761Z	   31 Prepare	select * from phones where id = ?
+2019-07-23T06:12:30.414892Z	   31 Execute	select * from phones where id = '6'
+2019-07-23T06:12:30.416093Z	   31 Close stmt	
+2019-07-23T06:12:30.416184Z	   31 Quit	
+2019-07-23T06:12:37.321355Z	   32 Connect	root@localhost on zipdev using TCP/IP
+2019-07-23T06:12:37.323454Z	   32 Prepare	INSERT INTO phones (phone, phone_books_id) values (?, ?)
+2019-07-23T06:12:37.323524Z	   32 Execute	INSERT INTO phones (phone, phone_books_id) values ('1111111111', '1')
+2019-07-23T06:12:37.324409Z	   32 Close stmt	
+2019-07-23T06:12:37.324553Z	   32 Quit	
+2019-07-23T06:13:21.656448Z	   33 Connect	root@localhost on zipdev using TCP/IP
+2019-07-23T06:13:21.659641Z	   33 Prepare	INSERT INTO phones (phone, phone_books_id) values (?, ?)
+2019-07-23T06:13:21.659805Z	   33 Execute	INSERT INTO phones (phone, phone_books_id) values ('1111111111', '4')
+2019-07-23T06:13:21.669491Z	   33 Close stmt	
+2019-07-23T06:13:21.669737Z	   33 Quit	
+2019-07-23T06:14:00.368346Z	   22 Quit	
+2019-07-23T06:14:22.440234Z	   34 Connect	root@localhost on zipdev using TCP/IP
+2019-07-23T06:14:22.441164Z	   34 Prepare	INSERT INTO phones (phone, phone_books_id) values (?, ?)
+2019-07-23T06:14:22.441312Z	   34 Execute	INSERT INTO phones (phone, phone_books_id) values ('1111111111', '2')
+2019-07-23T06:14:22.441705Z	   34 Close stmt	
+2019-07-23T06:14:22.442297Z	   34 Quit	
+2019-07-23T06:14:26.885166Z	   35 Connect	root@localhost on zipdev using TCP/IP
+2019-07-23T06:14:26.886174Z	   35 Prepare	INSERT INTO phones (phone, phone_books_id) values (?, ?)
+2019-07-23T06:14:26.886282Z	   35 Execute	INSERT INTO phones (phone, phone_books_id) values ('1111111111', '3')
+2019-07-23T06:14:26.886909Z	   35 Close stmt	
+2019-07-23T06:14:26.887032Z	   35 Quit	
+2019-07-23T06:14:29.271750Z	   36 Connect	root@localhost on zipdev using TCP/IP
+2019-07-23T06:14:29.272303Z	   36 Prepare	INSERT INTO phones (phone, phone_books_id) values (?, ?)
+2019-07-23T06:14:29.272372Z	   36 Execute	INSERT INTO phones (phone, phone_books_id) values ('1111111111', '4')
+2019-07-23T06:14:29.273476Z	   36 Close stmt	
+2019-07-23T06:14:29.273670Z	   36 Quit	
+2019-07-23T06:14:31.005725Z	   37 Connect	root@localhost on zipdev using TCP/IP
+2019-07-23T06:14:31.006385Z	   37 Prepare	INSERT INTO phones (phone, phone_books_id) values (?, ?)
+2019-07-23T06:14:31.006472Z	   37 Execute	INSERT INTO phones (phone, phone_books_id) values ('1111111111', '5')
+2019-07-23T06:14:31.006960Z	   37 Close stmt	
+2019-07-23T06:14:31.007144Z	   37 Quit	
+2019-07-23T06:14:35.457802Z	   38 Connect	root@localhost on zipdev using TCP/IP
+2019-07-23T06:14:35.460040Z	   38 Prepare	INSERT INTO phones (phone, phone_books_id) values (?, ?)
+2019-07-23T06:14:35.460191Z	   38 Execute	INSERT INTO phones (phone, phone_books_id) values ('1111111111', '6')
+2019-07-23T06:14:35.461190Z	   38 Close stmt	
+2019-07-23T06:14:35.461368Z	   38 Quit	
+2019-07-23T06:16:15.332268Z	   39 Connect	root@localhost on zipdev using TCP/IP
+2019-07-23T06:16:15.334429Z	   39 Prepare	INSERT INTO phones (phone, phone_books_id) values (?, ?)
+2019-07-23T06:16:15.334614Z	   39 Execute	INSERT INTO phones (phone, phone_books_id) values ('1111111111', '111111')
+2019-07-23T06:16:15.335547Z	   39 Close stmt	
+2019-07-23T06:16:15.335955Z	   39 Quit	
+2019-07-23T06:16:26.228690Z	   40 Connect	root@localhost on zipdev using TCP/IP
+2019-07-23T06:16:26.230918Z	   40 Prepare	INSERT INTO phones (phone, phone_books_id) values (?, ?)
+2019-07-23T06:16:26.231020Z	   40 Execute	INSERT INTO phones (phone, phone_books_id) values ('1111111111', '4')
+2019-07-23T06:16:26.232057Z	   40 Close stmt	
+2019-07-23T06:16:26.232504Z	   40 Quit	
+2019-07-23T06:17:26.660813Z	   41 Connect	zipdev@localhost on 192.81.209.127 using TCP/IP
+2019-07-23T06:17:26.661606Z	   41 Connect	Access denied for user 'zipdev'@'localhost' (using password: YES)
+2019-07-23T06:17:26.674235Z	   42 Connect	zipdev@localhost on 192.81.209.127 using TCP/IP
+2019-07-23T06:17:26.674287Z	   42 Connect	Access denied for user 'zipdev'@'localhost' (using password: YES)
+2019-07-23T06:17:28.676942Z	   43 Connect	zipdev@localhost on 192.81.209.127 using TCP/IP
+2019-07-23T06:17:28.677067Z	   43 Connect	Access denied for user 'zipdev'@'localhost' (using password: YES)
+2019-07-23T06:17:33.881240Z	   44 Connect	zipdev@localhost on 192.81.209.127 using TCP/IP
+2019-07-23T06:17:33.881300Z	   44 Connect	Access denied for user 'zipdev'@'localhost' (using password: YES)
+2019-07-23T06:17:33.882954Z	   45 Connect	zipdev@localhost on 192.81.209.127 using TCP/IP
+2019-07-23T06:17:33.883004Z	   45 Connect	Access denied for user 'zipdev'@'localhost' (using password: YES)
+2019-07-23T06:17:35.884929Z	   46 Connect	zipdev@localhost on 192.81.209.127 using TCP/IP
+2019-07-23T06:17:35.884994Z	   46 Connect	Access denied for user 'zipdev'@'localhost' (using password: YES)
+2019-07-23T06:18:13.319190Z	   47 Connect	zipdev@localhost on 192.81.209.127 using TCP/IP
+2019-07-23T06:18:13.319252Z	   47 Connect	Access denied for user 'zipdev'@'localhost' (using password: YES)
+2019-07-23T06:18:13.325933Z	   48 Connect	zipdev@localhost on 192.81.209.127 using TCP/IP
+2019-07-23T06:18:13.326161Z	   48 Connect	Access denied for user 'zipdev'@'localhost' (using password: YES)
+2019-07-23T06:18:15.327475Z	   49 Connect	zipdev@localhost on 192.81.209.127 using TCP/IP
+2019-07-23T06:18:15.327540Z	   49 Connect	Access denied for user 'zipdev'@'localhost' (using password: YES)
+2019-07-23T06:19:47.097270Z	   50 Connect	root@localhost on zipdev using TCP/IP
+2019-07-23T06:19:47.098517Z	   50 Query	/* mysql-connector-java-5.1.47 ( Revision: fe1903b1ecb4a96a917f7ed3190d80c049b1de29 ) */SELECT  @@session.auto_increment_increment AS auto_increment_increment, @@character_set_client AS character_set_client, @@character_set_connection AS character_set_connection, @@character_set_results AS character_set_results, @@character_set_server AS character_set_server, @@collation_server AS collation_server, @@collation_connection AS collation_connection, @@init_connect AS init_connect, @@interactive_timeout AS interactive_timeout, @@license AS license, @@lower_case_table_names AS lower_case_table_names, @@max_allowed_packet AS max_allowed_packet, @@net_buffer_length AS net_buffer_length, @@net_write_timeout AS net_write_timeout, @@query_cache_size AS query_cache_size, @@query_cache_type AS query_cache_type, @@sql_mode AS sql_mode, @@system_time_zone AS system_time_zone, @@time_zone AS time_zone, @@transaction_isolation AS transaction_isolation, @@wait_timeout AS wait_timeout
+2019-07-23T06:19:47.099666Z	   50 Query	SET NAMES utf8mb4
+2019-07-23T06:19:47.099971Z	   50 Query	SET autocommit=1
+2019-07-23T06:19:47.100304Z	   50 Query	SET sql_mode='STRICT_ALL_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,STRICT_TRANS_TABLES'
+2019-07-23T06:19:47.123267Z	   50 Query	/* ApplicationName=PhpStorm 2018.2.2 */ set session transaction read write
+2019-07-23T06:19:47.129698Z	   50 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T06:19:47.130804Z	   50 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select @@session.transaction_read_only
+2019-07-23T06:19:47.131084Z	   50 Query	/* ApplicationName=PhpStorm 2018.2.2 */ use zipdev
+2019-07-23T06:19:47.131560Z	   50 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T06:19:47.133446Z	   50 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select @@session.transaction_read_only
+2019-07-23T06:19:47.140679Z	   50 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T06:19:47.142069Z	   50 Query	/* ApplicationName=PhpStorm 2018.2.2 */ select database()
+2019-07-23T06:19:47.157497Z	   50 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T06:19:47.160403Z	   50 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T06:19:47.161955Z	   50 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET net_write_timeout=600
+2019-07-23T06:19:47.162218Z	   50 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET SQL_SELECT_LIMIT=502
+2019-07-23T06:19:47.162446Z	   50 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SELECT t.* FROM zipdev.phones t
+LIMIT 501
+2019-07-23T06:19:47.213620Z	   50 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET net_write_timeout=60
+2019-07-23T06:19:47.215297Z	   50 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SET SQL_SELECT_LIMIT=DEFAULT
+2019-07-23T06:19:47.215585Z	   50 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SHOW WARNINGS
+2019-07-23T06:19:47.222179Z	   50 Query	/* ApplicationName=PhpStorm 2018.2.2 */ SELECT @@session.transaction_isolation
+2019-07-23T06:27:40.313412Z	   50 Quit	
+2019-07-23T06:27:40.329602Z	   16 Quit	
